@@ -1,0 +1,43 @@
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        <!--Sidebar content-->
+
+		<label>Search:</label>
+		<input ng-model="query" type="text" placeholder="Search Player...">
+        <select ng-model="player.pos">
+          <option value="">All</option>
+          <option value="qb">QB</option>
+          <option value="rb">RB</option>
+          <option value="wr">WR</option>
+          <option value="te">TE</option>
+          <option value="k">K</option>
+        </select>
+		<div class="scrollable player-list">
+			<table class="table table-bordered table-hover">
+			  <thead>
+				<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th><th>Pass Att</th><th>Pass Comp</th><th>Pass Yds</th><th>Pass TDs</th><th>Pass INTs</th><th>Rush Att</th><th>Rush Yds</th><th>Rush TDs</th><th>Rec. Yds</th><th>Rec. TDs</th><th>Rec. Att</th><th>Fumbles</th></tr>
+			  </thead>
+			  <tr ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp">
+				<td><strong>{{player.fpts}}</strong></td>
+				<td>{{player.PlayerName}}</td>
+				<td>{{player.pos}}</td>
+				<td><strong>{{player.Team}}</strong></td>
+				<td>{{player.pass_att}}</td>
+				<td>{{player.pass_cmp}}</td>
+				<td>{{player.pass_yds}}</td>
+				<td>{{player.pass_tds}}</td>
+				<td>{{player.pass_ints}}</td>
+				<td>{{player.rush_att}}</td>
+				<td>{{player.rush_yds}}</td>
+				<td>{{player.rush_tds}}</td>
+				<td>{{player.rec_yds}}</td>
+				<td>{{player.rec_tds}}</td>
+				<td>{{player.rec_att}}</td>
+				<td>{{player.fumbles}}</td>
+			  </tr>
+			</table>
+		</div>
+      </div>
+    </div>
+  </div>

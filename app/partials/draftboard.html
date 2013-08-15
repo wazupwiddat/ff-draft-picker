@@ -1,0 +1,35 @@
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4">
+        <!--Sidebar content-->
+		<label>Search:</label>
+		<input ng-model="query" type="text" placeholder="Search Player...">
+        <select ng-model="player.pos">
+          <option value="">All</option>
+          <option value="qb">QB</option>
+          <option value="rb">RB</option>
+          <option value="wr">WR</option>
+          <option value="te">TE</option>
+          <option value="k">K</option>
+        </select>
+		<div class="scrollable player-list">
+			<table class="table table-bordered table-hover">
+			  <thead>
+				<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
+			  </thead>
+			  <tbody>
+			  <tr ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp">
+				<td><strong>{{player.fpts}}</strong></td>
+				<td>{{player.PlayerName}}</td>
+				<td>{{player.pos}}</td>
+				<td><strong>{{player.Team}}</strong></td>
+			  </tr>
+			  </tbody>
+			</table>
+		</div>
+      </div>
+      <div class="span8">
+		<label>Draft Board</label>
+	  </div>
+    </div>
+  </div>

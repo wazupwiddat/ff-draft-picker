@@ -1,0 +1,8 @@
+/* app css stylesheet */
+
+.player-list {
+	height: 500px;
+}
+.scrollable {
+	overflow: auto; 
+}

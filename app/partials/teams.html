@@ -1,0 +1,22 @@
+  <div class="container-fluid">
+      <div class="span12">
+		  <div class="span4" ng-repeat="fteam in fteams | orderBy:fteamOrderProp">
+		    <h4>{{fteam.FantasyTeam}}</h4>
+			<div class="scrollable player-list">
+				<table class="table table-bordered table-hover">
+				  <thead>
+					<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
+				  </thead>
+				  <tbody>
+				  <tr ng-repeat="player in fplayer.players | filter:query | filter:player | orderBy:playerOrderProp">
+					<td><strong>{{player.fpts}}</strong></td>
+					<td>{{player.PlayerName}}</td>
+					<td>{{player.pos}}</td>
+					<td><strong>{{player.Team}}</strong></td>
+				  </tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+      </div>
+  </div>

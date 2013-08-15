@@ -1,0 +1,282 @@
+[
+	{
+		"PlayerName": "Stephen Gostkowski",
+		"Team": "NE",
+		"fg": "27.9",
+		"fga": "32.9",
+		"xpt": "56.8",
+		"fpts": "140.4"
+	},
+	{
+		"PlayerName": "Phil Dawson",
+		"Team": "SF",
+		"fg": "31",
+		"fga": "35.4",
+		"xpt": "44.4",
+		"fpts": "137.5"
+	},
+	{
+		"PlayerName": "Matt Bryant",
+		"Team": "ATL",
+		"fg": "30.2",
+		"fga": "33.6",
+		"xpt": "45",
+		"fpts": "135.6"
+	},
+	{
+		"PlayerName": "Matt Prater",
+		"Team": "DEN",
+		"fg": "26.9",
+		"fga": "30.6",
+		"xpt": "52.4",
+		"fpts": "133"
+	},
+	{
+		"PlayerName": "Blair Walsh",
+		"Team": "MIN",
+		"fg": "31.5",
+		"fga": "35.2",
+		"xpt": "37",
+		"fpts": "131.5"
+	},
+	{
+		"PlayerName": "Justin Tucker",
+		"Team": "BAL",
+		"fg": "29.7",
+		"fga": "33.3",
+		"xpt": "41.8",
+		"fpts": "130.8"
+	},
+	{
+		"PlayerName": "Randy Bullock",
+		"Team": "HOU",
+		"fg": "28.1",
+		"fga": "34.1",
+		"xpt": "43.6",
+		"fpts": "127.8"
+	},
+	{
+		"PlayerName": "Garrett Hartley",
+		"Team": "NO",
+		"fg": "23.9",
+		"fga": "28.1",
+		"xpt": "55",
+		"fpts": "126.5"
+	},
+	{
+		"PlayerName": "Kai Forbath",
+		"Team": "WAS",
+		"fg": "27.6",
+		"fga": "30.2",
+		"xpt": "43.5",
+		"fpts": "126.3"
+	},
+	{
+		"PlayerName": "David Akers",
+		"Team": "DET",
+		"fg": "26.7",
+		"fga": "32.9",
+		"xpt": "44.7",
+		"fpts": "124.9"
+	},
+	{
+		"PlayerName": "Josh Brown",
+		"Team": "NYG",
+		"fg": "27.2",
+		"fga": "30.3",
+		"xpt": "41.8",
+		"fpts": "123.5"
+	},
+	{
+		"PlayerName": "Mason Crosby",
+		"Team": "GB",
+		"fg": "23.6",
+		"fga": "29.4",
+		"xpt": "52",
+		"fpts": "123"
+	},
+	{
+		"PlayerName": "Sebastian Janikowski",
+		"Team": "OAK",
+		"fg": "30.4",
+		"fga": "33.8",
+		"xpt": "31.7",
+		"fpts": "122.7"
+	},
+	{
+		"PlayerName": "Dan Bailey",
+		"Team": "DAL",
+		"fg": "27.9",
+		"fga": "32",
+		"xpt": "38.3",
+		"fpts": "122.2"
+	},
+	{
+		"PlayerName": "Alex Henery",
+		"Team": "PHI",
+		"fg": "26.7",
+		"fga": "29.8",
+		"xpt": "40.2",
+		"fpts": "120.3"
+	},
+	{
+		"PlayerName": "Adam Vinatieri",
+		"Team": "IND",
+		"fg": "26.4",
+		"fga": "30.3",
+		"xpt": "39.9",
+		"fpts": "119"
+	},
+	{
+		"PlayerName": "Greg Zuerlein",
+		"Team": "STL",
+		"fg": "27.9",
+		"fga": "32.1",
+		"xpt": "34",
+		"fpts": "117.7"
+	},
+	{
+		"PlayerName": "Steven Hauschka",
+		"Team": "SEA",
+		"fg": "25.2",
+		"fga": "27.4",
+		"xpt": "41.6",
+		"fpts": "117.1"
+	},
+	{
+		"PlayerName": "Robbie Gould",
+		"Team": "CHI",
+		"fg": "24.8",
+		"fga": "29.5",
+		"xpt": "38.9",
+		"fpts": "113.3"
+	},
+	{
+		"PlayerName": "Rob Bironas",
+		"Team": "TEN",
+		"fg": "25.8",
+		"fga": "30.4",
+		"xpt": "34.1",
+		"fpts": "111.4"
+	},
+	{
+		"PlayerName": "Nick Novak",
+		"Team": "SD",
+		"fg": "24.8",
+		"fga": "29.5",
+		"xpt": "36.7",
+		"fpts": "111.2"
+	},
+	{
+		"PlayerName": "Lawrence Tynes",
+		"Team": "TB",
+		"fg": "24.1",
+		"fga": "30.3",
+		"xpt": "38.9",
+		"fpts": "111.2"
+	},
+	{
+		"PlayerName": "Mike Nugent",
+		"Team": "CIN",
+		"fg": "24.9",
+		"fga": "30.9",
+		"xpt": "35.9",
+		"fpts": "110.6"
+	},
+	{
+		"PlayerName": "Josh Scobee",
+		"Team": "JAC",
+		"fg": "26.7",
+		"fga": "30.8",
+		"xpt": "29.7",
+		"fpts": "109.8"
+	},
+	{
+		"PlayerName": "Shaun Suisham",
+		"Team": "PIT",
+		"fg": "24.2",
+		"fga": "29.3",
+		"xpt": "36",
+		"fpts": "108.7"
+	},
+	{
+		"PlayerName": "Ryan Succop",
+		"Team": "KC",
+		"fg": "25.5",
+		"fga": "31.1",
+		"xpt": "31.7",
+		"fpts": "108.2"
+	},
+	{
+		"PlayerName": "Jay Feely",
+		"Team": "ARI",
+		"fg": "25.7",
+		"fga": "28.9",
+		"xpt": "31",
+		"fpts": "108"
+	},
+	{
+		"PlayerName": "Connor Barth",
+		"Team": "TB",
+		"fg": "23.5",
+		"fga": "28.7",
+		"xpt": "37.2",
+		"fpts": "107.6"
+	},
+	{
+		"PlayerName": "Graham Gano",
+		"Team": "CAR",
+		"fg": "21.6",
+		"fga": "27",
+		"xpt": "41.1",
+		"fpts": "105.9"
+	},
+	{
+		"PlayerName": "Shayne Graham",
+		"Team": "CLE",
+		"fg": "24.8",
+		"fga": "30",
+		"xpt": "30.4",
+		"fpts": "104.9"
+	},
+	{
+		"PlayerName": "Caleb Sturgis",
+		"Team": "MIA",
+		"fg": "23.6",
+		"fga": "30.1",
+		"xpt": "31.9",
+		"fpts": "102.7"
+	},
+	{
+		"PlayerName": "Nick Folk",
+		"Team": "NYJ",
+		"fg": "23.9",
+		"fga": "29.5",
+		"xpt": "31",
+		"fpts": "102.5"
+	},
+	{
+		"PlayerName": "Dustin Hopkins",
+		"Team": "BUF",
+		"fg": "22.2",
+		"fga": "27.5",
+		"xpt": "30.1",
+		"fpts": "96.7"
+	},
+	{
+		"PlayerName": "Dan Carpenter",
+		"Team": "MIA",
+		"fg": "21",
+		"fga": "22.6",
+		"xpt": "26.2",
+		"fpts": "89.2"
+	},
+	{
+		"PlayerName": "Rian Lindell",
+		"Team": "BUF",
+		"fg": "19.8",
+		"fga": "22.8",
+		"xpt": "27.8",
+		"fpts": "87.2"
+	}
+]
