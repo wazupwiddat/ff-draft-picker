@@ -86,13 +86,32 @@ angular.module('myApp.controllers', []).
 			$scope.draftorder = DraftOrder.query();
 		}
 	}])
-	.controller('DraftBoardCtrl', ['$scope', '$http', 'Draft', 'Player', 'DraftOrder', function($scope, $http, Draft, Player, DraftOrder) {
-		$scope.DraftOrder = DraftOrder.query();
+	.controller('DraftBoardCtrl', ['$scope', '$http', 'FTeam', 'Draft', 'Player', 'DraftOrder', function($scope, $http, FTeam, Draft, Player, DraftOrder) {
 	
 		$scope.players = Player.query();
 		$scope.playerOrderProp = '-fpts';
 		
+		$scope.fteams = FTeam.query();
+		
+		// sort function that allows sorting by any field
+		var sort_by = function(field, reverse, primer){
+			var key = function (x) {return primer ? primer(x[field]) : x[field]};
+
+			return function (a,b) {
+				var A = key(a), B = key(b);
+				return ((A < B) ? -1 : (A > B) ? +1 : 0) * [-1,1][+!!reverse];                  
+			}
+		}
+		
+		$scope.DraftOrder = DraftOrder.query();
 		$scope.selectPlayer = function(player) {
-			console.log(player);
+			$scope.selectingPlayer = player;
+			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
+		
+			var draftIndex = angular.element('.carousel').find('.carousel-inner > .item.active').index();
+			$scope.selectingTeam = $scope.sortedDraftOrder[draftIndex];
+		}
+		$scope.removePlayer = function(player, drafter) {
+			console.log("Removing player: " + player + " From: " + drafter);
 		}
 	}]);

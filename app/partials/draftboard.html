@@ -29,7 +29,9 @@
 		</div>
       </div>
       <div class="span8">
-		<label>Draft Board</label>
+        <label>Selecting Player: {{selectingPlayer}}</label>
+        <lable>Selecting Team: {{selectingTeam}}</label>
+		<label>Team Needs:</label>
 		<div id="myCarousel" class="carousel slide" data-interval="false" data-slide-to="0">
 		  <div ng-init="rounds = [
 			{round:1, selection:0},
@@ -51,8 +53,23 @@
 		</div>
 		  <!-- Carousel items -->
 		  <div class="carousel-inner">
-			<div class="item" ng-repeat="drafter in DraftOrder | orderBy:'selection'">
+			<div class="item" ng-repeat="drafter in DraftOrder | orderBy:'selection'" data-drop="true">
 			  <div class="draft-team-list">
+				<div class="scrollable player-list">
+					<table class="table table-bordered table-hover">
+			  		<thead>
+						<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
+			  		</thead>
+			  		<tbody>
+			  			<tr ng-repeat="player in drafter.players" ng-click="removePlayer(player, drafter)">
+							<td><strong>{{player.fpts}}</strong></td>
+							<td>{{player.PlayerName}}</td>
+							<td>{{player.pos}}</td>
+							<td><strong>{{player.Team}}</strong></td>
+			  			</tr>
+			  		</tbody>
+					</table>
+				</div>
                 <div class="carousel-caption">
 					<h4># {{drafter.selection}} - {{drafter.FTeamName}}</h4>
 					<h4>Round: {{drafter.round}}</h4>
