@@ -3,6 +3,19 @@
 .player-list {
 	height: 500px;
 }
+.draft-team-list {
+	height: 600px;
+}
+.carousel-control {
+	top: 480px;
+}
+.carousel-indicators {
+  color: #000;
+  background-color: #ccc;
+  top: 0;
+  right:0;
+  position: 0;
+}
 .scrollable {
 	overflow: auto; 
 }

@@ -86,8 +86,13 @@ angular.module('myApp.controllers', []).
 			$scope.draftorder = DraftOrder.query();
 		}
 	}])
-	.controller('DraftBoardCtrl', ['$scope', '$http', 'Draft', 'Player', function($scope, $http, Draft, Player) {
-		/*$scope.selectingteam = Draft.*/
+	.controller('DraftBoardCtrl', ['$scope', '$http', 'Draft', 'Player', 'DraftOrder', function($scope, $http, Draft, Player, DraftOrder) {
+		$scope.DraftOrder = DraftOrder.query();
+	
 		$scope.players = Player.query();
 		$scope.playerOrderProp = '-fpts';
+		
+		$scope.selectPlayer = function(player) {
+			console.log(player);
+		}
 	}]);

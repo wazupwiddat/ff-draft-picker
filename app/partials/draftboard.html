@@ -18,7 +18,7 @@
 				<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
 			  </thead>
 			  <tbody>
-			  <tr ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp">
+			  <tr ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp" ng-click="selectPlayer(player)">
 				<td><strong>{{player.fpts}}</strong></td>
 				<td>{{player.PlayerName}}</td>
 				<td>{{player.pos}}</td>
@@ -30,6 +30,41 @@
       </div>
       <div class="span8">
 		<label>Draft Board</label>
+		<div id="myCarousel" class="carousel slide" data-interval="false" data-slide-to="0">
+		  <div ng-init="rounds = [
+			{round:1, selection:0},
+			{round:2, selection:12},
+			{round:3, selection:24},
+			{round:4, selection:36},
+			{round:5, selection:48},
+			{round:6, selection:60},
+			{round:7, selection:72},
+			{round:8, selection:84},
+			{round:9, selection:96},
+			{round:10, selection:108},
+			{round:11, selection:120},
+			{round:12, selection:132}
+		  ]">
+		  <ol class="carousel-indicators">
+			<li ng-repeat="round in rounds" data-target="#myCarousel" data-slide-to="{{round.selection}}"></li>
+		  </ol>
+		</div>
+		  <!-- Carousel items -->
+		  <div class="carousel-inner">
+			<div class="item" ng-repeat="drafter in DraftOrder | orderBy:'selection'">
+			  <div class="draft-team-list">
+                <div class="carousel-caption">
+					<h4># {{drafter.selection}} - {{drafter.FTeamName}}</h4>
+					<h4>Round: {{drafter.round}}</h4>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Carousel nav -->
+		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		</div>
+	  </div>
 	  </div>
     </div>
   </div>
