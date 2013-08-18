@@ -8,7 +8,7 @@
 					<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
 				  </thead>
 				  <tbody>
-				  <tr ng-repeat="player in fplayer.players | filter:query | filter:player | orderBy:playerOrderProp">
+				  <tr ng-repeat="player in fteam.players | filter:query | filter:player | orderBy:playerOrderProp">
 					<td><strong>{{player.fpts}}</strong></td>
 					<td>{{player.PlayerName}}</td>
 					<td>{{player.pos}}</td>

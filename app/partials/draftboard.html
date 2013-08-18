@@ -18,7 +18,7 @@
 				<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
 			  </thead>
 			  <tbody>
-			  <tr ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp" ng-click="selectPlayer(player)">
+			  <tr ng-class="{success: player.selected}" ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp" ng-click="selectPlayer(player)">
 				<td><strong>{{player.fpts}}</strong></td>
 				<td>{{player.PlayerName}}</td>
 				<td>{{player.pos}}</td>
@@ -29,10 +29,11 @@
 		</div>
       </div>
       <div class="span8">
-        <label>Selecting Player: {{selectingPlayer}}</label>
-        <lable>Selecting Team: {{selectingTeam}}</label>
+        <label>Selecting Player: {{selectingPlayer.PlayerName}}</label>
+        <label>Selecting Team: {{selectingTeam.FTeamName}}</label>
 		<label>Team Needs:</label>
-		<div id="myCarousel" class="carousel slide" data-interval="false" data-slide-to="0">
+		<button ng-disabled="!selectingPlayer || (selectingTeam.players && selectingTeam.players.length > 0) || selectingPlayer.selected" class="btn btn-primary" ng-click="commitSelection()">Player Drafted</button>
+		<div id="myCarousel" class="carousel slide" data-interval="false">
 		  <div ng-init="rounds = [
 			{round:1, selection:0},
 			{round:2, selection:12},
@@ -53,9 +54,9 @@
 		</div>
 		  <!-- Carousel items -->
 		  <div class="carousel-inner">
-			<div class="item" ng-repeat="drafter in DraftOrder | orderBy:'selection'" data-drop="true">
+			<div ng-class="{active : $first, item: true}" ng-repeat="drafter in DraftOrder | orderBy:'selection'">
 			  <div class="draft-team-list">
-				<div class="scrollable player-list">
+				<div class="draft-list">
 					<table class="table table-bordered table-hover">
 			  		<thead>
 						<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
@@ -80,6 +81,9 @@
 		  <!-- Carousel nav -->
 		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		</div>
+		<div>
+			Stats
 		</div>
 	  </div>
 	  </div>

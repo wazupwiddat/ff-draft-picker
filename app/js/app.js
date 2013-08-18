@@ -8,5 +8,5 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
     $routeProvider.when('/players', {templateUrl: 'partials/players.html', controller: 'PlayersCtrl'});
     $routeProvider.when('/teams', {templateUrl: 'partials/teams.html', controller: 'TeamsCtrl'});
     $routeProvider.when('/draftorder', {templateUrl: 'partials/draftorder.html', controller: 'DraftOrderCtrl'});
-    $routeProvider.otherwise({redirectTo: '/players'});
+    $routeProvider.otherwise({redirectTo: '/board'});
   }]);

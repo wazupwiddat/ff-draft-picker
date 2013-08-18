@@ -77,7 +77,7 @@ angular.module('myApp.controllers', []).
 					draftingTeam.FTeamName = fteam.FantasyTeam;
 					draftingTeam.round = round;
 					draftingTeam.selection = selection;
-					draftingTeam.$save();
+					draftingTeam.saveOrUpdate();
 					selection += 1;
 				});
 				sortDirection = !sortDirection;
@@ -87,12 +87,21 @@ angular.module('myApp.controllers', []).
 		}
 	}])
 	.controller('DraftBoardCtrl', ['$scope', '$http', 'FTeam', 'Draft', 'Player', 'DraftOrder', function($scope, $http, FTeam, Draft, Player, DraftOrder) {
-	
+		angular.element(document).ready(function() {
+			var carousel = angular.element('.carousel');
+			carousel.carousel('pause');
+			/*
+			carousel.on('slide', function(e) {
+				$(this).
+			});*/
+		});
+		
 		$scope.players = Player.query();
 		$scope.playerOrderProp = '-fpts';
 		
 		$scope.fteams = FTeam.query();
-		
+
+		// Move to a utility module
 		// sort function that allows sorting by any field
 		var sort_by = function(field, reverse, primer){
 			var key = function (x) {return primer ? primer(x[field]) : x[field]};
@@ -103,6 +112,10 @@ angular.module('myApp.controllers', []).
 			}
 		}
 		
+		var compileWhoIsLeft = function() {
+			// 
+		};
+		
 		$scope.DraftOrder = DraftOrder.query();
 		$scope.selectPlayer = function(player) {
 			$scope.selectingPlayer = player;
@@ -111,7 +124,71 @@ angular.module('myApp.controllers', []).
 			var draftIndex = angular.element('.carousel').find('.carousel-inner > .item.active').index();
 			$scope.selectingTeam = $scope.sortedDraftOrder[draftIndex];
 		}
-		$scope.removePlayer = function(player, drafter) {
-			console.log("Removing player: " + player + " From: " + drafter);
+		$scope.commitSelection = function() {
+			// add player to Fantasy Team
+			var fteam = FTeam.get({id: $scope.selectingTeam.FTeam}, function() {
+				if (!Array.isArray(fteam.players)) {
+					fteam.players = [$scope.selectingPlayer];
+				} else {
+					if (fteam.players.indexOf($scope.selectingPlayer) >= 0) {
+						return;
+					}
+					fteam.players.push($scope.selectingPlayer);
+				}
+				fteam.update();
+				
+				// add player to Draft Order
+				if (!Array.isArray($scope.selectingTeam.players)) {
+					$scope.selectingTeam.players = [$scope.selectingPlayer];
+				} else {
+					$scope.selectingTeam.players.push($scope.selectingPlayer);
+				}
+				$scope.selectingTeam.saveOrUpdate();
+
+				// update player as selected
+				$scope.selectingPlayer.selected = true;
+				$scope.selectingPlayer.saveOrUpdate();
+				
+				$scope.lastSelection = $scope.selectingTeam.selection-1;
+				angular.element('.carousel').carousel('next');
+				
+				$scope.selectingPlayer = undefined;
+				$scope.selectingTeam = undefined;
+				
+				
+			});
+			
+			// update suggestions
+		}
+		$scope.removePlayer = function(removePlayer, drafter) {
+			var idx = drafter.players.indexOf(removePlayer);
+			if (idx >= 0) {
+				drafter.players.splice(idx, 1);
+				drafter.saveOrUpdate();
+			}
+			
+			var fteam = FTeam.get({id: drafter.FTeam}, function() {
+				idx = -1;
+				angular.forEach(fteam.players, function(player, key) {
+					if (idx == -1 && angular.equals(removePlayer.PlayerName, player.PlayerName)) {
+						idx = key;
+					}
+				});
+				if (idx >= 0) {
+					fteam.players.splice(idx, 1);
+					fteam.saveOrUpdate();
+				}
+			});
+
+			idx = -1;
+			angular.forEach($scope.players, function(player, key) {
+				if (idx == -1 && angular.equals(removePlayer.PlayerName, player.PlayerName)) {
+					idx = key;
+				}
+			});
+			if (idx >=0) {
+				$scope.players[idx].selected = false;
+				$scope.players[idx].saveOrUpdate();
+			}
 		}
 	}]);

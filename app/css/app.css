@@ -3,11 +3,14 @@
 .player-list {
 	height: 500px;
 }
+.draft-list {
+	height: 100px;
+}
 .draft-team-list {
-	height: 600px;
+	height: 160px;
 }
 .carousel-control {
-	top: 480px;
+	top: 180px;
 }
 .carousel-indicators {
   color: #000;
