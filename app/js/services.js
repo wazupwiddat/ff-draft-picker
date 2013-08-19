@@ -61,4 +61,12 @@ angular.module('myApp.services', ['ngResource']).
 
 	return DraftOrder;
   }).
+  factory('DraftStats', function() {
+	return {
+		getMinPremiumFactor: function() {
+			return 1.0;
+		}
+		
+	}
+  }).
   value('version', '0.1');

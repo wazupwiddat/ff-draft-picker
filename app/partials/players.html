@@ -13,12 +13,14 @@
           <option value="te">TE</option>
           <option value="k">K</option>
         </select>
+		<button class="btn btn-primary" ng-click="reloadPlayers()">Reload Player Projections</button>
 		<div class="scrollable player-list">
 			<table class="table table-bordered table-hover">
 			  <thead>
-				<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th><th>Pass Att</th><th>Pass Comp</th><th>Pass Yds</th><th>Pass TDs</th><th>Pass INTs</th><th>Rush Att</th><th>Rush Yds</th><th>Rush TDs</th><th>Rec. Yds</th><th>Rec. TDs</th><th>Rec. Att</th><th>Fumbles</th></tr>
+				<tr><th>Adj. Score</th><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th><th>Pass Att</th><th>Pass Comp</th><th>Pass Yds</th><th>Pass TDs</th><th>Pass INTs</th><th>Rush Att</th><th>Rush Yds</th><th>Rush TDs</th><th>Rec. Yds</th><th>Rec. TDs</th><th>Rec. Att</th><th>Fumbles</th></tr>
 			  </thead>
 			  <tr ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp">
+				<td><strong>{{player.adjustedScore}}</strong></td>
 				<td><strong>{{player.fpts}}</strong></td>
 				<td>{{player.PlayerName}}</td>
 				<td>{{player.pos}}</td>

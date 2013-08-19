@@ -4,26 +4,7 @@
 
 angular.module('myApp.controllers', []).
 	controller('PlayersCtrl', ['$scope', '$http', 'Player', function($scope, $http, Player) {
-	/* load Player JSON into MongoLab DB
-		$http.get('data/qb.json').success(function(data) {
-			loadPlayers(data, 'qb');
-		});
-		$http.get('data/rb.json').success(function(data) {
-			loadPlayers(data, 'rb');
-		});
-		
-		$http.get('data/wr.json').success(function(data) {
-			loadPlayers(data, 'wr');
-		});
-
-		$http.get('data/te.json').success(function(data) {
-			loadPlayers(data, 'te');
-		});
-
-		$http.get('data/k.json').success(function(data) {
-			loadPlayers(data, 'k');
-		});
-		function loadPlayers(players, pos) {
+		function loadPlayers(players, pos, scoreWeight) {
 			angular.forEach (players, function(player, key){
 				angular.forEach(player, function(prop, key) {
 					if ((!angular.equals(key, "PlayerName")) && (!angular.equals(key, "Team"))){
@@ -32,13 +13,35 @@ angular.module('myApp.controllers', []).
 					player[key] = prop;
 				})
 				player.pos = pos;
+				player.adjustedScore = Math.round((player.fpts * scoreWeight) * 100 ) / 100;
 				var newPlayer = new Player(player);
 				newPlayer.$save();
 			})
 		}
-*/
+		$scope.reloadPlayers = function () {
+			//load Player JSON into MongoLab DB
+			$http.get('data/qb.json').success(function(data) {
+				loadPlayers(data, 'qb', 1.0);
+			});
+			$http.get('data/rb.json').success(function(data) {
+				loadPlayers(data, 'rb', 1.67);
+			});
+			
+			$http.get('data/wr.json').success(function(data) {
+				loadPlayers(data, 'wr', 1.67);
+			});
+
+			$http.get('data/te.json').success(function(data) {
+				loadPlayers(data, 'te', 1.0);
+			});
+
+			$http.get('data/k.json').success(function(data) {
+				loadPlayers(data, 'k', 1.0);
+			});
+		};
+
 		$scope.players = Player.query();
-		$scope.playerOrderProp = '-fpts';
+		$scope.playerOrderProp = '-adjustedScore';
 	}])
 	.controller('TeamsCtrl', ['$scope', '$http', 'FTeam', function($scope, $http, FTeam) {
 		$scope.fteams = FTeam.query();
@@ -91,13 +94,14 @@ angular.module('myApp.controllers', []).
 			var carousel = angular.element('.carousel');
 			carousel.carousel('pause');
 			/*
-			carousel.on('slide', function(e) {
-				$(this).
-			});*/
+			carousel.on('slid', function(e) {
+				selectTeam();
+			});
+			*/
 		});
 		
 		$scope.players = Player.query();
-		$scope.playerOrderProp = '-fpts';
+		$scope.playerOrderProp = '-adjustedScore';
 		
 		$scope.fteams = FTeam.query();
 
@@ -111,19 +115,37 @@ angular.module('myApp.controllers', []).
 				return ((A < B) ? -1 : (A > B) ? +1 : 0) * [-1,1][+!!reverse];                  
 			}
 		}
-		
-		var compileWhoIsLeft = function() {
-			// 
+
+		var selectTeam = function() {
+			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
+			var draftIndex = angular.element('.carousel').find('.carousel-inner > .item.active').index();
+			$scope.selectingTeam = $scope.sortedDraftOrder[draftIndex];
 		};
 		
 		$scope.DraftOrder = DraftOrder.query();
-		$scope.selectPlayer = function(player) {
-			$scope.selectingPlayer = player;
-			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
 		
+		$scope.computePlayerDropoff = function() {
+			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
 			var draftIndex = angular.element('.carousel').find('.carousel-inner > .item.active').index();
 			$scope.selectingTeam = $scope.sortedDraftOrder[draftIndex];
+
+			var selectionOffset = 1;
+			for (var i=draftIndex+1;i<$scope.sortedDraftOrder.length;i++) {
+				if (angular.equals($scope.sortedDraftOrder[i].FTeamName, $scope.selectingTeam.FTeamName)) {
+					break;
+				}
+				selectionOffset++;
+			}
+			$scope.selectionGap = selectionOffset;
+			//  Show the drop off for each position
+			
+		};
+		
+		$scope.selectPlayer = function(player) {
+			selectTeam();
+			$scope.selectingPlayer = player;
 		}
+		
 		$scope.commitSelection = function() {
 			// add player to Fantasy Team
 			var fteam = FTeam.get({id: $scope.selectingTeam.FTeam}, function() {

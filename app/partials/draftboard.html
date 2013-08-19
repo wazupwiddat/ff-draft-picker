@@ -15,10 +15,11 @@
 		<div class="scrollable player-list">
 			<table class="table table-bordered table-hover">
 			  <thead>
-				<tr><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
+				<tr><th>Adj. Score</th><th>Points</th><th>Player Name</th><th>Position</th><th>Team</th></tr>
 			  </thead>
 			  <tbody>
 			  <tr ng-class="{success: player.selected}" ng-repeat="player in players | filter:query | filter:player | orderBy:playerOrderProp" ng-click="selectPlayer(player)">
+				<td><strong>{{player.adjustedScore}}</strong></td>
 				<td><strong>{{player.fpts}}</strong></td>
 				<td>{{player.PlayerName}}</td>
 				<td>{{player.pos}}</td>
@@ -83,7 +84,9 @@
 		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 		<div>
-			Stats
+			<h1>Stats</h1>
+			<button class="btn btn-info" ng-click="computePlayerDropoff()">Compute Player Drop Off</button>
+			<h3>{{selectionGap}}</h3>
 		</div>
 	  </div>
 	  </div>
