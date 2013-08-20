@@ -128,6 +128,18 @@ angular.module('myApp.controllers', []).
 			});
 			return returnPlayers;
 		};
+		
+		var createDropoff = function(players, pos) {
+			var dropoff = {};
+			dropoff.pos = pos;
+			if (players.length > 1) {
+				var nextIdx = Math.round(players.length * .75);
+				dropoff.best = players[0];
+				dropoff.next = players[nextIdx];
+				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
+			}
+			return dropoff;
+		};
 
 		var selectTeam = function() {
 			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
@@ -154,54 +166,11 @@ angular.module('myApp.controllers', []).
 			
 			var players = filterPlayers('qb', '', false, selectionOffset);
 			$scope.dropOffs = [];
-			if (players.length > 0) {
-				var dropoff = {};
-				dropoff.best = players[0];
-				dropoff.pos = 'Quarterbacks';
-				dropoff.next = players[players.length-1];
-				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
-				$scope.dropOffs.push(dropoff);
-			}
-			
-			players = filterPlayers('rb', '', false, selectionOffset);
-			if (players.length > 0) {
-				var dropoff = {};
-				dropoff.best = players[0];
-				dropoff.pos = 'Running Backs';
-				dropoff.next = players[players.length-1];
-				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
-				$scope.dropOffs.push(dropoff);
-			}
-			
-			players = filterPlayers('wr', 'te', false, selectionOffset);
-			if (players.length > 0) {
-				var dropoff = {};
-				dropoff.best = players[0];
-				dropoff.pos = 'WR / TE';
-				dropoff.next = players[players.length-1];
-				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
-				$scope.dropOffs.push(dropoff);
-			}
-			/*
-			players = filterPlayers('def', '', false, selectionOffset);
-			if (players.length > 0) {
-				var dropoff = {};
-				dropoff.best = players[0];
-				dropoff.pos = 'Defense';
-				dropoff.next = players[players.length-1];
-				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
-				$scope.dropOffs.push(dropoff);
-			}
-			*/
-			players = filterPlayers('k', '', false, selectionOffset);
-			if (players.length > 0) {
-				var dropoff = {};
-				dropoff.best = players[0];
-				dropoff.pos = 'Kicker';
-				dropoff.next = players[players.length-1];
-				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
-				$scope.dropOffs.push(dropoff);
-			}
+			$scope.dropOffs.push(createDropoff(filterPlayers('qb', '', false, selectionOffset), 'Quarterbacks'));
+			$scope.dropOffs.push(createDropoff(filterPlayers('rb', '', false, selectionOffset), 'Runningbacks'));
+			$scope.dropOffs.push(createDropoff(filterPlayers('wr', 'te', false, selectionOffset), 'WR / TE'));
+			//$scope.dropOffs.push(createDropoff(filterPlayers('def', '', false, selectionOffset), 'Defenses'));
+			$scope.dropOffs.push(createDropoff(filterPlayers('k', '', false, selectionOffset), 'Kickers'));
 			
 		};
 		
