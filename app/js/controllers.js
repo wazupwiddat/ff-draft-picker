@@ -100,11 +100,6 @@ angular.module('myApp.controllers', []).
 			*/
 		});
 		
-		$scope.players = Player.query();
-		$scope.playerOrderProp = '-adjustedScore';
-		
-		$scope.fteams = FTeam.query();
-
 		// Move to a utility module
 		// sort function that allows sorting by any field
 		var sort_by = function(field, reverse, primer){
@@ -114,7 +109,25 @@ angular.module('myApp.controllers', []).
 				var A = key(a), B = key(b);
 				return ((A < B) ? -1 : (A > B) ? +1 : 0) * [-1,1][+!!reverse];                  
 			}
-		}
+		};
+		
+		$scope.players = Player.query();
+		$scope.playerOrderProp = '-adjustedScore';
+		
+		$scope.fteams = FTeam.query();
+
+		var filterPlayers = function(pos1, pos2, selected, offset) {
+			var returnPlayers = [];
+			var playerCount = 0;
+			var tempPlayers = $scope.players.sort(sort_by('adjustedScore', false));
+			angular.forEach(tempPlayers, function(player, key) {
+				if (playerCount < offset && (!player.selected || player.selected == selected) && (angular.equals(player.pos, pos1) || angular.equals(player.pos, pos2))) {
+					playerCount++;
+					returnPlayers.push(player);
+				}
+			});
+			return returnPlayers;
+		};
 
 		var selectTeam = function() {
 			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
@@ -138,6 +151,57 @@ angular.module('myApp.controllers', []).
 			}
 			$scope.selectionGap = selectionOffset;
 			//  Show the drop off for each position
+			
+			var players = filterPlayers('qb', '', false, selectionOffset);
+			$scope.dropOffs = [];
+			if (players.length > 0) {
+				var dropoff = {};
+				dropoff.best = players[0];
+				dropoff.pos = 'Quarterbacks';
+				dropoff.next = players[players.length-1];
+				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
+				$scope.dropOffs.push(dropoff);
+			}
+			
+			players = filterPlayers('rb', '', false, selectionOffset);
+			if (players.length > 0) {
+				var dropoff = {};
+				dropoff.best = players[0];
+				dropoff.pos = 'Running Backs';
+				dropoff.next = players[players.length-1];
+				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
+				$scope.dropOffs.push(dropoff);
+			}
+			
+			players = filterPlayers('wr', 'te', false, selectionOffset);
+			if (players.length > 0) {
+				var dropoff = {};
+				dropoff.best = players[0];
+				dropoff.pos = 'WR / TE';
+				dropoff.next = players[players.length-1];
+				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
+				$scope.dropOffs.push(dropoff);
+			}
+			/*
+			players = filterPlayers('def', '', false, selectionOffset);
+			if (players.length > 0) {
+				var dropoff = {};
+				dropoff.best = players[0];
+				dropoff.pos = 'Defense';
+				dropoff.next = players[players.length-1];
+				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
+				$scope.dropOffs.push(dropoff);
+			}
+			*/
+			players = filterPlayers('k', '', false, selectionOffset);
+			if (players.length > 0) {
+				var dropoff = {};
+				dropoff.best = players[0];
+				dropoff.pos = 'Kicker';
+				dropoff.next = players[players.length-1];
+				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
+				$scope.dropOffs.push(dropoff);
+			}
 			
 		};
 		

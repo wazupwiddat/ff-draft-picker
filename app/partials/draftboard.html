@@ -87,6 +87,11 @@
 			<h1>Stats</h1>
 			<button class="btn btn-info" ng-click="computePlayerDropoff()">Compute Player Drop Off</button>
 			<h3>{{selectionGap}}</h3>
+			<div ng-repeat="dropoff in dropOffs | orderBy:'-value'">
+				<h4>{{dropoff.pos}} : {{dropoff.value}}</h4>
+				<p>Highest Rated: {{dropoff.best.PlayerName}} - {{dropoff.best.adjustedScore}}</p>
+				<p>Next Round: {{dropoff.next.PlayerName}} - {{dropoff.next.adjustedScore}}</p>
+			</div>
 		</div>
 	  </div>
 	  </div>
