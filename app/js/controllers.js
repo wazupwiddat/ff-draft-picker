@@ -162,8 +162,8 @@ angular.module('myApp.controllers', []).
 				selectionOffset++;
 			}
 			$scope.selectionGap = selectionOffset;
-			//  Show the drop off for each position
 			
+			//  Show the drop off for each position
 			var players = filterPlayers('qb', '', false, selectionOffset);
 			$scope.dropOffs = [];
 			$scope.dropOffs.push(createDropoff(filterPlayers('qb', '', false, selectionOffset), 'Quarterbacks'));
