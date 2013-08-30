@@ -100,6 +100,7 @@ angular.module('myApp.controllers', []).
 			*/
 		});
 		
+		$scope.Selection = 1;
 		// Move to a utility module
 		// sort function that allows sorting by any field
 		var sort_by = function(field, reverse, primer){
