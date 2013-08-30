@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
+angular.module('myApp.controllers', ['ui.bootstrap']).
 	controller('PlayersCtrl', ['$scope', '$http', 'Player', function($scope, $http, Player) {
 		function loadPlayers(players, pos, scoreWeight) {
 			angular.forEach (players, function(player, key){
@@ -116,7 +116,16 @@ angular.module('myApp.controllers', []).
 		$scope.playerOrderProp = '-adjustedScore';
 		
 		$scope.fteams = FTeam.query();
-
+		
+		$scope.opts = {
+    		backdropFade: true,
+			dialogFade:true
+		};
+		
+		$scope.close = function () {
+			$scope.showNeeds = false;
+		};
+		
 		var filterPlayers = function(pos1, pos2, selected, offset) {
 			var returnPlayers = [];
 			var playerCount = 0;
@@ -142,22 +151,23 @@ angular.module('myApp.controllers', []).
 			return dropoff;
 		};
 
-		var selectTeam = function() {
-			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
-			var draftIndex = angular.element('.carousel').find('.carousel-inner > .item.active').index();
-			$scope.selectingTeam = $scope.sortedDraftOrder[draftIndex];
+		$scope.selectTeam = function(drafter) {
+		    angular.forEach($scope.DraftOrder, function(drafter, key) {
+		    	drafter.selecting = undefined;
+		    });
+		    drafter.selecting = true;
+			$scope.selectingTeam = drafter;
 		};
 		
 		$scope.DraftOrder = DraftOrder.query();
 		
-		$scope.computePlayerDropoff = function() {
+		$scope.computePlayerDropoff = function(drafter) {
 			$scope.sortedDraftOrder = $scope.DraftOrder.sort(sort_by('selection', true));
-			var draftIndex = angular.element('.carousel').find('.carousel-inner > .item.active').index();
-			$scope.selectingTeam = $scope.sortedDraftOrder[draftIndex];
-
+			
 			var selectionOffset = 1;
-			for (var i=draftIndex+1;i<$scope.sortedDraftOrder.length;i++) {
-				if (angular.equals($scope.sortedDraftOrder[i].FTeamName, $scope.selectingTeam.FTeamName)) {
+			var draftIndex = drafter.selection;
+			for (var i=draftIndex;i<$scope.sortedDraftOrder.length;i++) {
+				if (angular.equals($scope.sortedDraftOrder[i].FTeamName, drafter.FTeamName)) {
 					break;
 				}
 				selectionOffset++;
@@ -171,12 +181,11 @@ angular.module('myApp.controllers', []).
 			$scope.dropOffs.push(createDropoff(filterPlayers('rb', '', false, selectionOffset), 'Runningbacks'));
 			$scope.dropOffs.push(createDropoff(filterPlayers('wr', 'te', false, selectionOffset), 'WR / TE'));
 			//$scope.dropOffs.push(createDropoff(filterPlayers('def', '', false, selectionOffset), 'Defenses'));
-			$scope.dropOffs.push(createDropoff(filterPlayers('k', '', false, selectionOffset), 'Kickers'));
+			//$scope.dropOffs.push(createDropoff(filterPlayers('k', '', false, selectionOffset), 'Kickers'));
 			
 		};
 		
 		$scope.selectPlayer = function(player) {
-			selectTeam();
 			$scope.selectingPlayer = player;
 		}
 		
@@ -194,19 +203,13 @@ angular.module('myApp.controllers', []).
 				fteam.update();
 				
 				// add player to Draft Order
-				if (!Array.isArray($scope.selectingTeam.players)) {
-					$scope.selectingTeam.players = [$scope.selectingPlayer];
-				} else {
-					$scope.selectingTeam.players.push($scope.selectingPlayer);
-				}
+				$scope.selectingTeam.selecting = undefined;
+				$scope.selectingTeam.player = $scope.selectingPlayer;
 				$scope.selectingTeam.saveOrUpdate();
 
 				// update player as selected
 				$scope.selectingPlayer.selected = true;
 				$scope.selectingPlayer.saveOrUpdate();
-				
-				$scope.lastSelection = $scope.selectingTeam.selection-1;
-				angular.element('.carousel').carousel('next');
 				
 				$scope.selectingPlayer = undefined;
 				$scope.selectingTeam = undefined;
@@ -216,15 +219,15 @@ angular.module('myApp.controllers', []).
 			
 			// update suggestions
 		}
-		$scope.removePlayer = function(removePlayer, drafter) {
-			var idx = drafter.players.indexOf(removePlayer);
-			if (idx >= 0) {
-				drafter.players.splice(idx, 1);
-				drafter.saveOrUpdate();
-			}
-			
+		$scope.removePlayer = function(drafter) {
+		    if (!drafter.player) {
+		       $scope.computePlayerDropoff(drafter);
+		       $scope.showNeeds = true;
+		       return;
+		    }
+			var idx = -1;
 			var fteam = FTeam.get({id: drafter.FTeam}, function() {
-				idx = -1;
+			    var removePlayer = drafter.player;
 				angular.forEach(fteam.players, function(player, key) {
 					if (idx == -1 && angular.equals(removePlayer.PlayerName, player.PlayerName)) {
 						idx = key;
@@ -234,17 +237,20 @@ angular.module('myApp.controllers', []).
 					fteam.players.splice(idx, 1);
 					fteam.saveOrUpdate();
 				}
-			});
-
-			idx = -1;
-			angular.forEach($scope.players, function(player, key) {
-				if (idx == -1 && angular.equals(removePlayer.PlayerName, player.PlayerName)) {
-					idx = key;
+			    idx = -1;
+				angular.forEach($scope.players, function(player, key) {
+					if (idx == -1 && angular.equals(removePlayer.PlayerName, player.PlayerName)) {
+						idx = key;
+					}
+				});
+				if (idx >=0) {
+					$scope.players[idx].selected = false;
+					$scope.players[idx].saveOrUpdate();
 				}
+
+				drafter.selecting = undefined;
+		    	drafter.player = undefined;
+				drafter.saveOrUpdate();
 			});
-			if (idx >=0) {
-				$scope.players[idx].selected = false;
-				$scope.players[idx].saveOrUpdate();
-			}
 		}
 	}]);
