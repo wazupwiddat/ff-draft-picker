@@ -46,6 +46,14 @@ angular.module('myApp.controllers', ['ui.bootstrap']).
 	.controller('TeamsCtrl', ['$scope', '$http', 'FTeam', function($scope, $http, FTeam) {
 		$scope.fteams = FTeam.query();
 		$scope.fteamOrderProp = 'DraftOrder';
+
+	    $scope.getTeamTotal = function(fteam) {
+	        var total = 0;
+			angular.forEach(fteam.players, function(player, key) {
+				total += player.fpts;
+			});  
+			return Math.round(total * 100) / 100;
+	    };
 	}])
 	.controller('DraftOrderCtrl', ['$scope', '$http', 'DraftOrder', 'FTeam', function($scope, $http, DraftOrder, FTeam) {
 		$scope.fteams = FTeam.query();
