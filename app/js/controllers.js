@@ -8,7 +8,7 @@ angular.module('myApp.controllers', ['ui.bootstrap']).
 			angular.forEach (players, function(player, key){
 				angular.forEach(player, function(prop, key) {
 					if ((!angular.equals(key, "PlayerName")) && (!angular.equals(key, "Team"))){
-						prop = parseFloat(prop.replace(',',''));
+						prop = parseFloat(prop);
 					}
 					player[key] = prop;
 				})
