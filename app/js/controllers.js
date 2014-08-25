@@ -151,7 +151,7 @@ angular.module('myApp.controllers', ['ui.bootstrap']).
 			var dropoff = {};
 			dropoff.pos = pos;
 			if (players.length > 1) {
-				var nextIdx = Math.round(players.length * .75);
+				var nextIdx = Math.round(players.length * .6);
 				dropoff.best = players[0];
 				dropoff.next = players[nextIdx];
 				dropoff.value = Math.round((dropoff.best.adjustedScore - dropoff.next.adjustedScore) * 100) / 100;
@@ -165,6 +165,7 @@ angular.module('myApp.controllers', ['ui.bootstrap']).
 		    });
 		    drafter.selecting = true;
 			$scope.selectingTeam = drafter;
+			$scope.computePlayerDropoff(drafter);
 		};
 		
 		$scope.DraftOrder = DraftOrder.query();

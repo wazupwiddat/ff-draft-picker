@@ -1,12 +1,12 @@
 /* app css stylesheet */
 
 .player-list {
-	height: 500px;
+	height: 550px;
 	border: 1px solid #888;
 	border-radius:3px;
 }
 .draft-list {
-	height: 500px;
+	height: 450px;
 	border: 1px solid #888;
 	border-radius:3px;
 }
