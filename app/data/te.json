@@ -1,122 +1,1100 @@
-[{"PlayerName":"Jimmy Graham","Team":"NO","rec_att":87.7 ,"rec_yds":"1,180.3" ,"rec_tds":12.9 ,"fumbles":0.0 ,"fpts":195.4 },
-{"PlayerName":"Julius Thomas","Team":"DEN","rec_att":76.2 ,"rec_yds":937.8 ,"rec_tds":10.9 ,"fumbles":0.5 ,"fpts":158.2 },
-{"PlayerName":"Rob Gronkowski","Team":"NE","rec_att":68.6 ,"rec_yds":924.5 ,"rec_tds":9.5 ,"fumbles":0.0 ,"fpts":149.5 },
-{"PlayerName":"Vernon Davis","Team":"SF","rec_att":58.6 ,"rec_yds":799.5 ,"rec_tds":9.5 ,"fumbles":0.5 ,"fpts":136.0 },
-{"PlayerName":"Jason Witten","Team":"DAL","rec_att":76.7 ,"rec_yds":850.9 ,"rec_tds":6.5 ,"fumbles":0.0 ,"fpts":124.1 },
-{"PlayerName":"Jordan Cameron","Team":"CLE","rec_att":74.5 ,"rec_yds":880.0 ,"rec_tds":5.9 ,"fumbles":0.5 ,"fpts":122.4 },
-{"PlayerName":"Dennis Pitta","Team":"BAL","rec_att":66.5 ,"rec_yds":793.8 ,"rec_tds":7.0 ,"fumbles":0.0 ,"fpts":121.4 },
-{"PlayerName":"Greg Olsen","Team":"CAR","rec_att":72.3 ,"rec_yds":836.7 ,"rec_tds":5.5 ,"fumbles":0.5 ,"fpts":115.7 },
-{"PlayerName":"Jordan Reed","Team":"WAS","rec_att":64.8 ,"rec_yds":762.8 ,"rec_tds":6.5 ,"fumbles":0.0 ,"fpts":115.3 },
-{"PlayerName":"Kyle Rudolph","Team":"MIN","rec_att":63.3 ,"rec_yds":688.7 ,"rec_tds":7.0 ,"fumbles":0.0 ,"fpts":110.9 },
-{"PlayerName":"Zach Ertz","Team":"PHI","rec_att":56.2 ,"rec_yds":712.8 ,"rec_tds":5.6 ,"fumbles":0.5 ,"fpts":103.9 },
-{"PlayerName":"Martellus Bennett","Team":"CHI","rec_att":62.5 ,"rec_yds":722.9 ,"rec_tds":5.0 ,"fumbles":0.5 ,"fpts":101.3 },
-{"PlayerName":"Heath Miller","Team":"PIT","rec_att":61.6 ,"rec_yds":682.2 ,"rec_tds":5.0 ,"fumbles":1.0 ,"fpts":96.2 },
-{"PlayerName":"Ladarius Green","Team":"SD","rec_att":45.9 ,"rec_yds":655.4 ,"rec_tds":5.1 ,"fumbles":0.0 ,"fpts":96.1 },
-{"PlayerName":"Antonio Gates","Team":"SD","rec_att":60.7 ,"rec_yds":680.7 ,"rec_tds":4.5 ,"fumbles":0.5 ,"fpts":94.1 },
-{"PlayerName":"Charles Clay","Team":"MIA","rec_att":56.1 ,"rec_yds":656.7 ,"rec_tds":5.0 ,"fumbles":1.0 ,"fpts":93.7 },
-{"PlayerName":"Delanie Walker","Team":"TEN","rec_att":58.0 ,"rec_yds":610.1 ,"rec_tds":5.6 ,"fumbles":0.5 ,"fpts":93.6 },
-{"PlayerName":"Eric Ebron","Team":"DET","rec_att":44.0 ,"rec_yds":563.9 ,"rec_tds":5.3 ,"fumbles":0.0 ,"fpts":88.2 },
-{"PlayerName":"Dwayne Allen","Team":"IND","rec_att":45.6 ,"rec_yds":549.8 ,"rec_tds":4.9 ,"fumbles":0.0 ,"fpts":84.4 },
-{"PlayerName":"Jared Cook","Team":"STL","rec_att":48.5 ,"rec_yds":582.1 ,"rec_tds":4.4 ,"fumbles":1.0 ,"fpts":82.6 },
-{"PlayerName":"Garrett Graham","Team":"HOU","rec_att":45.9 ,"rec_yds":505.3 ,"rec_tds":4.1 ,"fumbles":0.0 ,"fpts":75.1 },
-{"PlayerName":"Tyler Eifert","Team":"CIN","rec_att":41.7 ,"rec_yds":508.7 ,"rec_tds":3.8 ,"fumbles":0.0 ,"fpts":73.7 },
-{"PlayerName":"Marcedes Lewis","Team":"JAC","rec_att":41.1 ,"rec_yds":469.6 ,"rec_tds":4.0 ,"fumbles":0.0 ,"fpts":71.0 },
-{"PlayerName":"Scott Chandler","Team":"BUF","rec_att":43.3 ,"rec_yds":495.3 ,"rec_tds":3.6 ,"fumbles":1.0 ,"fpts":69.1 },
-{"PlayerName":"Mychal Rivera","Team":"OAK","rec_att":41.4 ,"rec_yds":461.9 ,"rec_tds":3.6 ,"fumbles":0.0 ,"fpts":67.8 },
-{"PlayerName":"Coby Fleener","Team":"IND","rec_att":36.7 ,"rec_yds":442.1 ,"rec_tds":3.9 ,"fumbles":0.0 ,"fpts":67.6 },
-{"PlayerName":"Travis Kelce","Team":"KC","rec_att":36.8 ,"rec_yds":463.9 ,"rec_tds":3.5 ,"fumbles":0.5 ,"fpts":66.4 },
-{"PlayerName":"Jace Amaro","Team":"NYJ","rec_att":34.4 ,"rec_yds":449.6 ,"rec_tds":3.0 ,"fumbles":0.0 ,"fpts":63.0 },
-{"PlayerName":"Brent Celek","Team":"PHI","rec_att":34.8 ,"rec_yds":424.9 ,"rec_tds":3.3 ,"fumbles":0.5 ,"fpts":61.3 },
-{"PlayerName":"Zach Miller","Team":"SEA","rec_att":33.3 ,"rec_yds":379.9 ,"rec_tds":3.4 ,"fumbles":0.0 ,"fpts":58.4 },
-{"PlayerName":"Jermaine Gresham","Team":"CIN","rec_att":36.6 ,"rec_yds":401.9 ,"rec_tds":3.1 ,"fumbles":1.5 ,"fpts":55.8 },
-{"PlayerName":"Austin Seferian-Jenkins","Team":"TB","rec_att":27.4 ,"rec_yds":316.8 ,"rec_tds":3.3 ,"fumbles":0.0 ,"fpts":51.5 },
-{"PlayerName":"Levine Toilolo","Team":"ATL","rec_att":26.9 ,"rec_yds":326.9 ,"rec_tds":3.0 ,"fumbles":0.0 ,"fpts":50.7 },
-{"PlayerName":"Owen Daniels","Team":"BAL","rec_att":30.9 ,"rec_yds":348.7 ,"rec_tds":2.5 ,"fumbles":0.0 ,"fpts":49.9 },
-{"PlayerName":"Brandon Bostick","Team":"GB","rec_att":23.9 ,"rec_yds":331.0 ,"rec_tds":2.6 ,"fumbles":0.5 ,"fpts":47.7 },
-{"PlayerName":"Tim Wright","Team":"TB","rec_att":25.0 ,"rec_yds":288.9 ,"rec_tds":2.9 ,"fumbles":0.0 ,"fpts":46.3 },
-{"PlayerName":"Andrew Quarless","Team":"GB","rec_att":27.0 ,"rec_yds":316.1 ,"rec_tds":2.4 ,"fumbles":0.0 ,"fpts":46.0 },
-{"PlayerName":"Jermichael Finley","Team":"FA","rec_att":23.9 ,"rec_yds":291.0 ,"rec_tds":2.8 ,"fumbles":0.0 ,"fpts":45.6 },
-{"PlayerName":"Brandon Pettigrew","Team":"DET","rec_att":28.0 ,"rec_yds":283.1 ,"rec_tds":3.0 ,"fumbles":1.0 ,"fpts":44.3 },
-{"PlayerName":"Adrien Robinson","Team":"NYG","rec_att":24.8 ,"rec_yds":319.5 ,"rec_tds":1.9 ,"fumbles":0.0 ,"fpts":43.4 },
-{"PlayerName":"John Carlson","Team":"ARI","rec_att":28.2 ,"rec_yds":293.1 ,"rec_tds":2.3 ,"fumbles":0.0 ,"fpts":43.1 },
-{"PlayerName":"Jeff Cumberland","Team":"NYJ","rec_att":25.1 ,"rec_yds":294.5 ,"rec_tds":1.9 ,"fumbles":0.0 ,"fpts":40.9 },
-{"PlayerName":"Anthony Fasano","Team":"KC","rec_att":25.1 ,"rec_yds":256.2 ,"rec_tds":2.5 ,"fumbles":0.0 ,"fpts":40.6 },
-{"PlayerName":"C.J. Fiedorowicz","Team":"HOU","rec_att":19.8 ,"rec_yds":245.6 ,"rec_tds":2.3 ,"fumbles":0.0 ,"fpts":38.4 },
-{"PlayerName":"Ryan Griffin","Team":"HOU","rec_att":23.3 ,"rec_yds":263.5 ,"rec_tds":1.7 ,"fumbles":0.0 ,"fpts":36.6 },
-{"PlayerName":"Lance Kendricks","Team":"STL","rec_att":21.5 ,"rec_yds":240.5 ,"rec_tds":1.9 ,"fumbles":0.0 ,"fpts":35.5 },
-{"PlayerName":"Luke Willson","Team":"SEA","rec_att":18.1 ,"rec_yds":236.5 ,"rec_tds":1.9 ,"fumbles":0.0 ,"fpts":35.1 },
-{"PlayerName":"Brandon Myers","Team":"TB","rec_att":21.9 ,"rec_yds":235.6 ,"rec_tds":1.6 ,"fumbles":0.0 ,"fpts":33.2 },
-{"PlayerName":"Gavin Escobar","Team":"DAL","rec_att":17.8 ,"rec_yds":221.5 ,"rec_tds":1.8 ,"fumbles":0.0 ,"fpts":33.0 },
-{"PlayerName":"Benjamin Watson","Team":"NO","rec_att":19.6 ,"rec_yds":215.4 ,"rec_tds":1.6 ,"fumbles":0.0 ,"fpts":31.3 },
-{"PlayerName":"Ed Dickson","Team":"CAR","rec_att":21.8 ,"rec_yds":233.5 ,"rec_tds":1.2 ,"fumbles":0.0 ,"fpts":30.6 },
-{"PlayerName":"Joseph Fauria","Team":"DET","rec_att":14.3 ,"rec_yds":169.9 ,"rec_tds":2.2 ,"fumbles":0.5 ,"fpts":29.2 },
-{"PlayerName":"Robert Housler","Team":"ARI","rec_att":18.5 ,"rec_yds":210.2 ,"rec_tds":1.2 ,"fumbles":0.0 ,"fpts":28.2 },
-{"PlayerName":"Troy Niklas","Team":"ARI","rec_att":14.3 ,"rec_yds":177.9 ,"rec_tds":1.3 ,"fumbles":0.0 ,"fpts":25.6 },
-{"PlayerName":"Clay Harbor","Team":"JAC","rec_att":17.2 ,"rec_yds":189.1 ,"rec_tds":1.1 ,"fumbles":0.0 ,"fpts":25.5 },
-{"PlayerName":"David Ausberry","Team":"OAK","rec_att":13.9 ,"rec_yds":166.8 ,"rec_tds":1.0 ,"fumbles":0.0 ,"fpts":22.7 },
-{"PlayerName":"Zach Sudfeld","Team":"NYJ","rec_att":14.7 ,"rec_yds":187.7 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":21.8 },
-{"PlayerName":"Vance McDonald","Team":"SF","rec_att":12.4 ,"rec_yds":171.1 ,"rec_tds":0.6 ,"fumbles":0.0 ,"fpts":20.7 },
-{"PlayerName":"Jacob Tamme","Team":"DEN","rec_att":13.9 ,"rec_yds":146.5 ,"rec_tds":1.0 ,"fumbles":0.0 ,"fpts":20.7 },
-{"PlayerName":"Logan Paulsen","Team":"WAS","rec_att":13.8 ,"rec_yds":153.6 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":20.2 },
-{"PlayerName":"Virgil Green","Team":"DEN","rec_att":12.0 ,"rec_yds":165.5 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":19.6 },
-{"PlayerName":"Jake Ballard","Team":"ARI","rec_att":11.3 ,"rec_yds":141.0 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":18.6 },
-{"PlayerName":"Tony Moeaki","Team":"BUF","rec_att":10.3 ,"rec_yds":128.5 ,"rec_tds":0.9 ,"fumbles":0.0 ,"fpts":18.3 },
-{"PlayerName":"Cory Harkey","Team":"STL","rec_att":12.5 ,"rec_yds":121.5 ,"rec_tds":1.0 ,"fumbles":0.0 ,"fpts":18.2 },
-{"PlayerName":"Rhett Ellison","Team":"MIN","rec_att":13.0 ,"rec_yds":150.0 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":18.0 },
-{"PlayerName":"Jim Dray","Team":"CLE","rec_att":12.8 ,"rec_yds":128.3 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":17.3 },
-{"PlayerName":"Dion Sims","Team":"MIA","rec_att":9.8 ,"rec_yds":125.6 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":17.1 },
-{"PlayerName":"Michael Hoomanawanui","Team":"NE","rec_att":11.9 ,"rec_yds":139.6 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":17.0 },
-{"PlayerName":"Sean McGrath","Team":"KC","rec_att":11.3 ,"rec_yds":123.8 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":16.9 },
-{"PlayerName":"Richard Rodgers","Team":"GB","rec_att":10.0 ,"rec_yds":107.5 ,"rec_tds":1.0 ,"fumbles":0.0 ,"fpts":16.8 },
-{"PlayerName":"James Hanna","Team":"DAL","rec_att":13.0 ,"rec_yds":137.0 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":16.7 },
-{"PlayerName":"Anthony McCoy","Team":"SEA","rec_att":10.0 ,"rec_yds":113.5 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":14.4 },
-{"PlayerName":"Arthur Lynch","Team":"MIA","rec_att":9.5 ,"rec_yds":111.0 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":14.1 },
-{"PlayerName":"Gary Barnidge","Team":"CLE","rec_att":11.0 ,"rec_yds":104.2 ,"rec_tds":0.6 ,"fumbles":0.0 ,"fpts":14.0 },
-{"PlayerName":"Kellen Davis","Team":"NYG","rec_att":9.1 ,"rec_yds":97.3 ,"rec_tds":0.7 ,"fumbles":0.0 ,"fpts":13.9 },
-{"PlayerName":"Demetrius Harris","Team":"KC","rec_att":9.2 ,"rec_yds":113.2 ,"rec_tds":0.3 ,"fumbles":0.0 ,"fpts":13.3 },
-{"PlayerName":"Matt Spaeth","Team":"PIT","rec_att":6.5 ,"rec_yds":73.0 ,"rec_tds":1.0 ,"fumbles":0.0 ,"fpts":13.3 },
-{"PlayerName":"Dante Rosario","Team":"CHI","rec_att":6.8 ,"rec_yds":87.4 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":13.2 },
-{"PlayerName":"Josh Hill","Team":"FA","rec_att":8.3 ,"rec_yds":86.3 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":13.1 },
-{"PlayerName":"Nick Kasa","Team":"OAK","rec_att":8.5 ,"rec_yds":93.0 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":12.3 },
-{"PlayerName":"Bear Pascoe","Team":"ATL","rec_att":9.8 ,"rec_yds":96.0 ,"rec_tds":0.4 ,"fumbles":0.0 ,"fpts":11.9 },
-{"PlayerName":"Joel Dreessen","Team":"DEN","rec_att":8.3 ,"rec_yds":72.8 ,"rec_tds":0.8 ,"fumbles":0.0 ,"fpts":11.8 },
-{"PlayerName":"David Paulson","Team":"PIT","rec_att":10.4 ,"rec_yds":110.1 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":11.0 },
-{"PlayerName":"Crockett Gillmore","Team":"BAL","rec_att":6.0 ,"rec_yds":77.0 ,"rec_tds":0.5 ,"fumbles":0.0 ,"fpts":10.7 },
-{"PlayerName":"James Casey","Team":"PHI","rec_att":7.4 ,"rec_yds":86.4 ,"rec_tds":0.3 ,"fumbles":0.0 ,"fpts":10.4 },
-{"PlayerName":"Larry Donnell","Team":"NYG","rec_att":7.1 ,"rec_yds":80.6 ,"rec_tds":0.4 ,"fumbles":0.0 ,"fpts":10.3 },
-{"PlayerName":"Michael Egnew","Team":"MIA","rec_att":8.3 ,"rec_yds":91.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":9.2 },
-{"PlayerName":"Chase Ford","Team":"MIN","rec_att":6.5 ,"rec_yds":85.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":8.5 },
-{"PlayerName":"Chris Gragg","Team":"BUF","rec_att":5.6 ,"rec_yds":61.9 ,"rec_tds":0.4 ,"fumbles":0.0 ,"fpts":8.4 },
-{"PlayerName":"D.J. Williams","Team":"NE","rec_att":5.8 ,"rec_yds":60.5 ,"rec_tds":0.3 ,"fumbles":0.0 ,"fpts":7.6 },
-{"PlayerName":"Gerell Robinson","Team":"DEN","rec_att":6.0 ,"rec_yds":72.8 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":7.3 },
-{"PlayerName":"John Phillips","Team":"SD","rec_att":8.0 ,"rec_yds":72.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":7.3 },
-{"PlayerName":"Craig Stevens","Team":"TEN","rec_att":6.5 ,"rec_yds":71.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":7.1 },
-{"PlayerName":"Weslye Saunders","Team":"IND","rec_att":6.0 ,"rec_yds":68.3 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":6.8 },
-{"PlayerName":"Taylor Thompson","Team":"TEN","rec_att":6.0 ,"rec_yds":67.9 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":6.8 },
-{"PlayerName":"Ryan Taylor","Team":"GB","rec_att":5.5 ,"rec_yds":67.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":6.7 },
-{"PlayerName":"Lee Smith","Team":"BUF","rec_att":6.5 ,"rec_yds":64.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":6.5 },
-{"PlayerName":"Garrett Celek","Team":"SF","rec_att":5.3 ,"rec_yds":58.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.9 },
-{"PlayerName":"Niles Paul","Team":"WAS","rec_att":6.0 ,"rec_yds":57.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.7 },
-{"PlayerName":"Allen Reisner","Team":"MIN","rec_att":4.5 ,"rec_yds":56.3 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.6 },
-{"PlayerName":"Fendi Onobun","Team":"JAC","rec_att":4.5 ,"rec_yds":56.3 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.6 },
-{"PlayerName":"Kevin Brock","Team":"CIN","rec_att":5.0 ,"rec_yds":55.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.6 },
-{"PlayerName":"David Johnson","Team":"SD","rec_att":5.3 ,"rec_yds":50.3 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.0 },
-{"PlayerName":"Jack Doyle","Team":"IND","rec_att":5.0 ,"rec_yds":49.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":5.0 },
-{"PlayerName":"Mickey Shuler","Team":"ATL","rec_att":4.5 ,"rec_yds":49.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.9 },
-{"PlayerName":"Daniel Fells","Team":"NYG","rec_att":4.5 ,"rec_yds":47.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.8 },
-{"PlayerName":"Konrad Reuland","Team":"FA","rec_att":5.0 ,"rec_yds":47.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.7 },
-{"PlayerName":"Luke Stocker","Team":"TB","rec_att":3.5 ,"rec_yds":43.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.4 },
-{"PlayerName":"Matthew Mulligan","Team":"CHI","rec_att":3.8 ,"rec_yds":40.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.1 },
-{"PlayerName":"Darren Fells","Team":"ARI","rec_att":3.8 ,"rec_yds":40.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.1 },
-{"PlayerName":"Zach Miller","Team":"CHI","rec_att":3.0 ,"rec_yds":39.8 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.0 },
-{"PlayerName":"Mike McNeill","Team":"CAR","rec_att":3.0 ,"rec_yds":39.8 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":4.0 },
-{"PlayerName":"Michael Palmer","Team":"PIT","rec_att":4.0 ,"rec_yds":35.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":3.6 },
-{"PlayerName":"Andrew Szczerba","Team":"ATL","rec_att":3.0 ,"rec_yds":32.3 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":3.2 },
-{"PlayerName":"Brandon Barden","Team":"JAC","rec_att":2.3 ,"rec_yds":30.8 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":3.1 },
-{"PlayerName":"MarQueis Gray","Team":"CLE","rec_att":3.5 ,"rec_yds":27.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":2.8 },
-{"PlayerName":"Emil Igwenagu","Team":"PHI","rec_att":3.0 ,"rec_yds":24.8 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":2.5 },
-{"PlayerName":"Richard Gordon","Team":"KC","rec_att":2.3 ,"rec_yds":23.3 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":2.3 },
-{"PlayerName":"Ted Bolser","Team":"WAS","rec_att":2.3 ,"rec_yds":12.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":1.2 },
-{"PlayerName":"Richie Brockel","Team":"CAR","rec_att":2.3 ,"rec_yds":10.5 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":1.1 },
-{"PlayerName":"Brandon Williams","Team":"ARI","rec_att":1.5 ,"rec_yds":9.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":0.9 },
-{"PlayerName":"Brad Smelley","Team":"HOU","rec_att":1.5 ,"rec_yds":9.0 ,"rec_tds":0.0 ,"fumbles":0.0 ,"fpts":0.9 }]
+[
+  {
+    "PlayerName":"Jimmy Graham",
+    "Team":"NO",
+    "rec_att":87.7,
+    "rec_yds":"1,180.30",
+    "rec_tds":12.9,
+    "fumbles":0,
+    "fpts":195.4
+  },
+  {
+    "PlayerName":"Julius Thomas",
+    "Team":"DEN",
+    "rec_att":76.2,
+    "rec_yds":"937.8",
+    "rec_tds":10.9,
+    "fumbles":0.5,
+    "fpts":158.2
+  },
+  {
+    "PlayerName":"Rob Gronkowski",
+    "Team":"NE",
+    "rec_att":69.6,
+    "rec_yds":"938.5",
+    "rec_tds":9.5,
+    "fumbles":0,
+    "fpts":150.9
+  },
+  {
+    "PlayerName":"Vernon Davis",
+    "Team":"SF",
+    "rec_att":57.7,
+    "rec_yds":"771",
+    "rec_tds":9.2,
+    "fumbles":0.5,
+    "fpts":131.3
+  },
+  {
+    "PlayerName":"Jason Witten",
+    "Team":"DAL",
+    "rec_att":76.7,
+    "rec_yds":"850.9",
+    "rec_tds":6.5,
+    "fumbles":0,
+    "fpts":124.1
+  },
+  {
+    "PlayerName":"Jordan Cameron",
+    "Team":"CLE",
+    "rec_att":75.1,
+    "rec_yds":"886.2",
+    "rec_tds":5.9,
+    "fumbles":0.5,
+    "fpts":123
+  },
+  {
+    "PlayerName":"Dennis Pitta",
+    "Team":"BAL",
+    "rec_att":66.5,
+    "rec_yds":"793.8",
+    "rec_tds":7,
+    "fumbles":0,
+    "fpts":121.4
+  },
+  {
+    "PlayerName":"Jordan Reed",
+    "Team":"WAS",
+    "rec_att":64.5,
+    "rec_yds":"762.8",
+    "rec_tds":6.5,
+    "fumbles":0,
+    "fpts":115.3
+  },
+  {
+    "PlayerName":"Greg Olsen",
+    "Team":"CAR",
+    "rec_att":70.5,
+    "rec_yds":"807.6",
+    "rec_tds":5.5,
+    "fumbles":0.5,
+    "fpts":112.8
+  },
+  {
+    "PlayerName":"Kyle Rudolph",
+    "Team":"MIN",
+    "rec_att":63.3,
+    "rec_yds":"700.7",
+    "rec_tds":7,
+    "fumbles":0,
+    "fpts":112.1
+  },
+  {
+    "PlayerName":"Zach Ertz",
+    "Team":"PHI",
+    "rec_att":57.4,
+    "rec_yds":"712.8",
+    "rec_tds":5.9,
+    "fumbles":0.5,
+    "fpts":105.7
+  },
+  {
+    "PlayerName":"Martellus Bennett",
+    "Team":"CHI",
+    "rec_att":62.5,
+    "rec_yds":"722.9",
+    "rec_tds":5,
+    "fumbles":0.5,
+    "fpts":101.3
+  },
+  {
+    "PlayerName":"Heath Miller",
+    "Team":"PIT",
+    "rec_att":61.6,
+    "rec_yds":"682.2",
+    "rec_tds":5,
+    "fumbles":1,
+    "fpts":96.2
+  },
+  {
+    "PlayerName":"Ladarius Green",
+    "Team":"SD",
+    "rec_att":45.9,
+    "rec_yds":"655.4",
+    "rec_tds":5.1,
+    "fumbles":0,
+    "fpts":96.1
+  },
+  {
+    "PlayerName":"Antonio Gates",
+    "Team":"SD",
+    "rec_att":60.7,
+    "rec_yds":"680.7",
+    "rec_tds":4.8,
+    "fumbles":0.5,
+    "fpts":95.9
+  },
+  {
+    "PlayerName":"Charles Clay",
+    "Team":"MIA",
+    "rec_att":56.1,
+    "rec_yds":"656.7",
+    "rec_tds":5,
+    "fumbles":1,
+    "fpts":93.7
+  },
+  {
+    "PlayerName":"Delanie Walker",
+    "Team":"TEN",
+    "rec_att":58,
+    "rec_yds":"610.1",
+    "rec_tds":5.3,
+    "fumbles":1,
+    "fpts":90.8
+  },
+  {
+    "PlayerName":"Dwayne Allen",
+    "Team":"IND",
+    "rec_att":46.5,
+    "rec_yds":"559.7",
+    "rec_tds":4.9,
+    "fumbles":0,
+    "fpts":85.4
+  },
+  {
+    "PlayerName":"Eric Ebron",
+    "Team":"DET",
+    "rec_att":41.3,
+    "rec_yds":"536.3",
+    "rec_tds":4.7,
+    "fumbles":0,
+    "fpts":81.8
+  },
+  {
+    "PlayerName":"Travis Kelce",
+    "Team":"KC",
+    "rec_att":42,
+    "rec_yds":"563",
+    "rec_tds":4.1,
+    "fumbles":0.5,
+    "fpts":79.9
+  },
+  {
+    "PlayerName":"Jared Cook",
+    "Team":"STL",
+    "rec_att":46.1,
+    "rec_yds":"543.3",
+    "rec_tds":3.8,
+    "fumbles":1,
+    "fpts":75.1
+  },
+  {
+    "PlayerName":"Garrett Graham",
+    "Team":"HOU",
+    "rec_att":46,
+    "rec_yds":"506.2",
+    "rec_tds":4,
+    "fumbles":0,
+    "fpts":74.6
+  },
+  {
+    "PlayerName":"Tyler Eifert",
+    "Team":"CIN",
+    "rec_att":41.7,
+    "rec_yds":"508.7",
+    "rec_tds":3.5,
+    "fumbles":0,
+    "fpts":71.9
+  },
+  {
+    "PlayerName":"Marcedes Lewis",
+    "Team":"JAC",
+    "rec_att":41.1,
+    "rec_yds":"469.6",
+    "rec_tds":4,
+    "fumbles":0,
+    "fpts":71
+  },
+  {
+    "PlayerName":"Coby Fleener",
+    "Team":"IND",
+    "rec_att":38.5,
+    "rec_yds":"461.9",
+    "rec_tds":3.9,
+    "fumbles":0,
+    "fpts":69.6
+  },
+  {
+    "PlayerName":"Scott Chandler",
+    "Team":"BUF",
+    "rec_att":43.3,
+    "rec_yds":"495.3",
+    "rec_tds":3.6,
+    "fumbles":1,
+    "fpts":69.1
+  },
+  {
+    "PlayerName":"Mychal Rivera",
+    "Team":"OAK",
+    "rec_att":41.4,
+    "rec_yds":"461.9",
+    "rec_tds":3.6,
+    "fumbles":0,
+    "fpts":67.8
+  },
+  {
+    "PlayerName":"Jace Amaro",
+    "Team":"NYJ",
+    "rec_att":31.4,
+    "rec_yds":"429.2",
+    "rec_tds":3,
+    "fumbles":0,
+    "fpts":60.9
+  },
+  {
+    "PlayerName":"Brent Celek",
+    "Team":"PHI",
+    "rec_att":34.8,
+    "rec_yds":"424.9",
+    "rec_tds":3.1,
+    "fumbles":0.5,
+    "fpts":60.1
+  },
+  {
+    "PlayerName":"Austin Seferian-Jenkins",
+    "Team":"TB",
+    "rec_att":32.2,
+    "rec_yds":"387",
+    "rec_tds":3.5,
+    "fumbles":0,
+    "fpts":59.7
+  },
+  {
+    "PlayerName":"Zach Miller",
+    "Team":"SEA",
+    "rec_att":33.3,
+    "rec_yds":"379.9",
+    "rec_tds":3.4,
+    "fumbles":0,
+    "fpts":58.4
+  },
+  {
+    "PlayerName":"Richard Rodgers",
+    "Team":"GB",
+    "rec_att":29.3,
+    "rec_yds":"373.7",
+    "rec_tds":3.4,
+    "fumbles":0,
+    "fpts":57.8
+  },
+  {
+    "PlayerName":"Jermaine Gresham",
+    "Team":"CIN",
+    "rec_att":36.6,
+    "rec_yds":"401.9",
+    "rec_tds":3.1,
+    "fumbles":1.5,
+    "fpts":55.8
+  },
+  {
+    "PlayerName":"Timothy Wright",
+    "Team":"NE",
+    "rec_att":29.6,
+    "rec_yds":"346.4",
+    "rec_tds":2.9,
+    "fumbles":0,
+    "fpts":52
+  },
+  {
+    "PlayerName":"Levine Toilolo",
+    "Team":"ATL",
+    "rec_att":26.9,
+    "rec_yds":"326.9",
+    "rec_tds":3,
+    "fumbles":0,
+    "fpts":50.7
+  },
+  {
+    "PlayerName":"Owen Daniels",
+    "Team":"BAL",
+    "rec_att":30.9,
+    "rec_yds":"348.7",
+    "rec_tds":2.5,
+    "fumbles":0,
+    "fpts":49.9
+  },
+  {
+    "PlayerName":"Jermichael Finley",
+    "Team":"FA",
+    "rec_att":23.9,
+    "rec_yds":"291",
+    "rec_tds":2.8,
+    "fumbles":0,
+    "fpts":45.6
+  },
+  {
+    "PlayerName":"Brandon Pettigrew",
+    "Team":"DET",
+    "rec_att":28,
+    "rec_yds":"283.1",
+    "rec_tds":3,
+    "fumbles":1,
+    "fpts":44.3
+  },
+  {
+    "PlayerName":"Adrien Robinson",
+    "Team":"NYG",
+    "rec_att":24.8,
+    "rec_yds":"319.5",
+    "rec_tds":1.9,
+    "fumbles":0,
+    "fpts":43.4
+  },
+  {
+    "PlayerName":"John Carlson",
+    "Team":"ARI",
+    "rec_att":28.2,
+    "rec_yds":"293.1",
+    "rec_tds":2.3,
+    "fumbles":0,
+    "fpts":43.1
+  },
+  {
+    "PlayerName":"C.J. Fiedorowicz",
+    "Team":"HOU",
+    "rec_att":23.3,
+    "rec_yds":"285.5",
+    "rec_tds":2.4,
+    "fumbles":0,
+    "fpts":43
+  },
+  {
+    "PlayerName":"Andrew Quarless",
+    "Team":"GB",
+    "rec_att":24.1,
+    "rec_yds":"273.7",
+    "rec_tds":2.3,
+    "fumbles":0,
+    "fpts":41.2
+  },
+  {
+    "PlayerName":"Jeff Cumberland",
+    "Team":"NYJ",
+    "rec_att":25.1,
+    "rec_yds":"294.5",
+    "rec_tds":1.9,
+    "fumbles":0,
+    "fpts":40.9
+  },
+  {
+    "PlayerName":"Anthony Fasano",
+    "Team":"KC",
+    "rec_att":25.1,
+    "rec_yds":"256.2",
+    "rec_tds":2.5,
+    "fumbles":0,
+    "fpts":40.6
+  },
+  {
+    "PlayerName":"Lance Kendricks",
+    "Team":"STL",
+    "rec_att":22.7,
+    "rec_yds":"243.2",
+    "rec_tds":1.9,
+    "fumbles":0,
+    "fpts":35.7
+  },
+  {
+    "PlayerName":"Brandon Myers",
+    "Team":"TB",
+    "rec_att":22.5,
+    "rec_yds":"241.9",
+    "rec_tds":1.9,
+    "fumbles":0,
+    "fpts":35.6
+  },
+  {
+    "PlayerName":"Brandon Bostick",
+    "Team":"GB",
+    "rec_att":18.3,
+    "rec_yds":"253.6",
+    "rec_tds":1.8,
+    "fumbles":0.5,
+    "fpts":35.2
+  },
+  {
+    "PlayerName":"Luke Willson",
+    "Team":"SEA",
+    "rec_att":18.1,
+    "rec_yds":"236.5",
+    "rec_tds":1.9,
+    "fumbles":0,
+    "fpts":35.1
+  },
+  {
+    "PlayerName":"Gavin Escobar",
+    "Team":"DAL",
+    "rec_att":17.8,
+    "rec_yds":"221.5",
+    "rec_tds":1.8,
+    "fumbles":0,
+    "fpts":33
+  },
+  {
+    "PlayerName":"Ryan Griffin",
+    "Team":"HOU",
+    "rec_att":20.1,
+    "rec_yds":"227.3",
+    "rec_tds":1.5,
+    "fumbles":0,
+    "fpts":31.7
+  },
+  {
+    "PlayerName":"Benjamin Watson",
+    "Team":"NO",
+    "rec_att":19.6,
+    "rec_yds":"215.4",
+    "rec_tds":1.6,
+    "fumbles":0,
+    "fpts":31.3
+  },
+  {
+    "PlayerName":"Ed Dickson",
+    "Team":"CAR",
+    "rec_att":21.8,
+    "rec_yds":"233.5",
+    "rec_tds":1.2,
+    "fumbles":0,
+    "fpts":30.6
+  },
+  {
+    "PlayerName":"Joseph Fauria",
+    "Team":"DET",
+    "rec_att":14.3,
+    "rec_yds":"169.9",
+    "rec_tds":2.2,
+    "fumbles":0.5,
+    "fpts":29.2
+  },
+  {
+    "PlayerName":"Robert Housler",
+    "Team":"ARI",
+    "rec_att":18.5,
+    "rec_yds":"210.2",
+    "rec_tds":1.2,
+    "fumbles":0,
+    "fpts":28.2
+  },
+  {
+    "PlayerName":"Troy Niklas",
+    "Team":"ARI",
+    "rec_att":14.3,
+    "rec_yds":"177.9",
+    "rec_tds":1.3,
+    "fumbles":0,
+    "fpts":25.6
+  },
+  {
+    "PlayerName":"Clay Harbor",
+    "Team":"JAC",
+    "rec_att":17.2,
+    "rec_yds":"189.1",
+    "rec_tds":1.1,
+    "fumbles":0,
+    "fpts":25.5
+  },
+  {
+    "PlayerName":"David Ausberry",
+    "Team":"OAK",
+    "rec_att":13.9,
+    "rec_yds":"166.8",
+    "rec_tds":1,
+    "fumbles":0,
+    "fpts":22.7
+  },
+  {
+    "PlayerName":"Zach Sudfeld",
+    "Team":"NYJ",
+    "rec_att":14.7,
+    "rec_yds":"187.7",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":21.8
+  },
+  {
+    "PlayerName":"Vance McDonald",
+    "Team":"SF",
+    "rec_att":12.4,
+    "rec_yds":"171.1",
+    "rec_tds":0.6,
+    "fumbles":0,
+    "fpts":20.7
+  },
+  {
+    "PlayerName":"Jacob Tamme",
+    "Team":"DEN",
+    "rec_att":13.9,
+    "rec_yds":"146.5",
+    "rec_tds":1,
+    "fumbles":0,
+    "fpts":20.7
+  },
+  {
+    "PlayerName":"Logan Paulsen",
+    "Team":"WAS",
+    "rec_att":13.8,
+    "rec_yds":"153.6",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":20.2
+  },
+  {
+    "PlayerName":"Virgil Green",
+    "Team":"DEN",
+    "rec_att":12,
+    "rec_yds":"165.5",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":19.6
+  },
+  {
+    "PlayerName":"Jake Ballard",
+    "Team":"ARI",
+    "rec_att":11.3,
+    "rec_yds":"141",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":18.6
+  },
+  {
+    "PlayerName":"Tony Moeaki",
+    "Team":"BUF",
+    "rec_att":10.3,
+    "rec_yds":"128.5",
+    "rec_tds":0.9,
+    "fumbles":0,
+    "fpts":18.3
+  },
+  {
+    "PlayerName":"Cory Harkey",
+    "Team":"STL",
+    "rec_att":12.5,
+    "rec_yds":"121.5",
+    "rec_tds":1,
+    "fumbles":0,
+    "fpts":18.2
+  },
+  {
+    "PlayerName":"Rhett Ellison",
+    "Team":"MIN",
+    "rec_att":13,
+    "rec_yds":"150",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":18
+  },
+  {
+    "PlayerName":"Jim Dray",
+    "Team":"CLE",
+    "rec_att":12.8,
+    "rec_yds":"128.3",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":17.3
+  },
+  {
+    "PlayerName":"Dion Sims",
+    "Team":"MIA",
+    "rec_att":9.8,
+    "rec_yds":"125.6",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":17.1
+  },
+  {
+    "PlayerName":"Michael Hoomanawanui",
+    "Team":"NE",
+    "rec_att":11.9,
+    "rec_yds":"139.6",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":17
+  },
+  {
+    "PlayerName":"Sean McGrath",
+    "Team":"KC",
+    "rec_att":11.3,
+    "rec_yds":"123.8",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":16.9
+  },
+  {
+    "PlayerName":"James Hanna",
+    "Team":"DAL",
+    "rec_att":13,
+    "rec_yds":"137",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":16.7
+  },
+  {
+    "PlayerName":"Anthony McCoy",
+    "Team":"SEA",
+    "rec_att":10,
+    "rec_yds":"113.5",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":14.4
+  },
+  {
+    "PlayerName":"Arthur Lynch",
+    "Team":"MIA",
+    "rec_att":9.5,
+    "rec_yds":"111",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":14.1
+  },
+  {
+    "PlayerName":"Gary Barnidge",
+    "Team":"CLE",
+    "rec_att":11,
+    "rec_yds":"104.2",
+    "rec_tds":0.6,
+    "fumbles":0,
+    "fpts":14
+  },
+  {
+    "PlayerName":"Kellen Davis",
+    "Team":"NYG",
+    "rec_att":9.1,
+    "rec_yds":"97.3",
+    "rec_tds":0.7,
+    "fumbles":0,
+    "fpts":13.9
+  },
+  {
+    "PlayerName":"Demetrius Harris",
+    "Team":"KC",
+    "rec_att":9.2,
+    "rec_yds":"113.2",
+    "rec_tds":0.3,
+    "fumbles":0,
+    "fpts":13.3
+  },
+  {
+    "PlayerName":"Matt Spaeth",
+    "Team":"PIT",
+    "rec_att":6.5,
+    "rec_yds":"73",
+    "rec_tds":1,
+    "fumbles":0,
+    "fpts":13.3
+  },
+  {
+    "PlayerName":"Dante Rosario",
+    "Team":"CHI",
+    "rec_att":6.8,
+    "rec_yds":"87.4",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":13.2
+  },
+  {
+    "PlayerName":"Josh Hill",
+    "Team":"FA",
+    "rec_att":8.3,
+    "rec_yds":"86.3",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":13.1
+  },
+  {
+    "PlayerName":"Nick Kasa",
+    "Team":"OAK",
+    "rec_att":8.5,
+    "rec_yds":"93",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":12.3
+  },
+  {
+    "PlayerName":"Bear Pascoe",
+    "Team":"ATL",
+    "rec_att":9.8,
+    "rec_yds":"96",
+    "rec_tds":0.4,
+    "fumbles":0,
+    "fpts":11.9
+  },
+  {
+    "PlayerName":"Joel Dreessen",
+    "Team":"DEN",
+    "rec_att":8.3,
+    "rec_yds":"72.8",
+    "rec_tds":0.8,
+    "fumbles":0,
+    "fpts":11.8
+  },
+  {
+    "PlayerName":"David Paulson",
+    "Team":"PIT",
+    "rec_att":10.4,
+    "rec_yds":"110.1",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":11
+  },
+  {
+    "PlayerName":"Crockett Gillmore",
+    "Team":"BAL",
+    "rec_att":6,
+    "rec_yds":"77",
+    "rec_tds":0.5,
+    "fumbles":0,
+    "fpts":10.7
+  },
+  {
+    "PlayerName":"James Casey",
+    "Team":"PHI",
+    "rec_att":7.4,
+    "rec_yds":"86.4",
+    "rec_tds":0.3,
+    "fumbles":0,
+    "fpts":10.4
+  },
+  {
+    "PlayerName":"Larry Donnell",
+    "Team":"NYG",
+    "rec_att":7.1,
+    "rec_yds":"80.6",
+    "rec_tds":0.4,
+    "fumbles":0,
+    "fpts":10.3
+  },
+  {
+    "PlayerName":"Michael Egnew",
+    "Team":"MIA",
+    "rec_att":8.3,
+    "rec_yds":"91.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":9.2
+  },
+  {
+    "PlayerName":"Chase Ford",
+    "Team":"MIN",
+    "rec_att":6.5,
+    "rec_yds":"85",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":8.5
+  },
+  {
+    "PlayerName":"Chris Gragg",
+    "Team":"BUF",
+    "rec_att":5.6,
+    "rec_yds":"61.9",
+    "rec_tds":0.4,
+    "fumbles":0,
+    "fpts":8.4
+  },
+  {
+    "PlayerName":"Gerell Robinson",
+    "Team":"DEN",
+    "rec_att":6,
+    "rec_yds":"72.8",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":7.3
+  },
+  {
+    "PlayerName":"John Phillips",
+    "Team":"SD",
+    "rec_att":8,
+    "rec_yds":"72.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":7.3
+  },
+  {
+    "PlayerName":"Craig Stevens",
+    "Team":"TEN",
+    "rec_att":6.5,
+    "rec_yds":"71",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":7.1
+  },
+  {
+    "PlayerName":"Weslye Saunders",
+    "Team":"IND",
+    "rec_att":6,
+    "rec_yds":"68.3",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":6.8
+  },
+  {
+    "PlayerName":"Taylor Thompson",
+    "Team":"TEN",
+    "rec_att":6,
+    "rec_yds":"67.9",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":6.8
+  },
+  {
+    "PlayerName":"Lee Smith",
+    "Team":"BUF",
+    "rec_att":6.5,
+    "rec_yds":"64.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":6.5
+  },
+  {
+    "PlayerName":"Garrett Celek",
+    "Team":"SF",
+    "rec_att":5.3,
+    "rec_yds":"58.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5.9
+  },
+  {
+    "PlayerName":"Niles Paul",
+    "Team":"WAS",
+    "rec_att":6,
+    "rec_yds":"57",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5.7
+  },
+  {
+    "PlayerName":"Allen Reisner",
+    "Team":"MIN",
+    "rec_att":4.5,
+    "rec_yds":"56.3",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5.6
+  },
+  {
+    "PlayerName":"Fendi Onobun",
+    "Team":"JAC",
+    "rec_att":4.5,
+    "rec_yds":"56.3",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5.6
+  },
+  {
+    "PlayerName":"Kevin Brock",
+    "Team":"CIN",
+    "rec_att":5,
+    "rec_yds":"55.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5.6
+  },
+  {
+    "PlayerName":"David Johnson",
+    "Team":"SD",
+    "rec_att":5.3,
+    "rec_yds":"50.3",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5
+  },
+  {
+    "PlayerName":"Ryan Taylor",
+    "Team":"GB",
+    "rec_att":3.8,
+    "rec_yds":"49.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5
+  },
+  {
+    "PlayerName":"Jack Doyle",
+    "Team":"IND",
+    "rec_att":5,
+    "rec_yds":"49.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":5
+  },
+  {
+    "PlayerName":"Mickey Shuler",
+    "Team":"ATL",
+    "rec_att":4.5,
+    "rec_yds":"49",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4.9
+  },
+  {
+    "PlayerName":"Daniel Fells",
+    "Team":"NYG",
+    "rec_att":4.5,
+    "rec_yds":"47.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4.8
+  },
+  {
+    "PlayerName":"Konrad Reuland",
+    "Team":"FA",
+    "rec_att":5,
+    "rec_yds":"47",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4.7
+  },
+  {
+    "PlayerName":"Luke Stocker",
+    "Team":"TB",
+    "rec_att":3.5,
+    "rec_yds":"43.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4.4
+  },
+  {
+    "PlayerName":"Matthew Mulligan",
+    "Team":"CHI",
+    "rec_att":3.8,
+    "rec_yds":"40.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4.1
+  },
+  {
+    "PlayerName":"Darren Fells",
+    "Team":"ARI",
+    "rec_att":3.8,
+    "rec_yds":"40.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4.1
+  },
+  {
+    "PlayerName":"Zach Miller",
+    "Team":"CHI",
+    "rec_att":3,
+    "rec_yds":"39.8",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4
+  },
+  {
+    "PlayerName":"Mike McNeill",
+    "Team":"CAR",
+    "rec_att":3,
+    "rec_yds":"39.8",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":4
+  },
+  {
+    "PlayerName":"Michael Palmer",
+    "Team":"PIT",
+    "rec_att":4,
+    "rec_yds":"35.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":3.6
+  },
+  {
+    "PlayerName":"Andrew Szczerba",
+    "Team":"ATL",
+    "rec_att":3,
+    "rec_yds":"32.3",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":3.2
+  },
+  {
+    "PlayerName":"Brandon Barden",
+    "Team":"JAC",
+    "rec_att":2.3,
+    "rec_yds":"30.8",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":3.1
+  },
+  {
+    "PlayerName":"D.J. Williams",
+    "Team":"NE",
+    "rec_att":2.5,
+    "rec_yds":"28",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":2.8
+  },
+  {
+    "PlayerName":"MarQueis Gray",
+    "Team":"CLE",
+    "rec_att":3.5,
+    "rec_yds":"27.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":2.8
+  },
+  {
+    "PlayerName":"Emil Igwenagu",
+    "Team":"PHI",
+    "rec_att":3,
+    "rec_yds":"24.8",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":2.5
+  },
+  {
+    "PlayerName":"Richard Gordon",
+    "Team":"KC",
+    "rec_att":2.3,
+    "rec_yds":"23.3",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":2.3
+  },
+  {
+    "PlayerName":"Ted Bolser",
+    "Team":"WAS",
+    "rec_att":2.3,
+    "rec_yds":"12",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":1.2
+  },
+  {
+    "PlayerName":"Richie Brockel",
+    "Team":"CAR",
+    "rec_att":2.3,
+    "rec_yds":"10.5",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":1.1
+  },
+  {
+    "PlayerName":"Brad Smelley",
+    "Team":"HOU",
+    "rec_att":1.5,
+    "rec_yds":"9",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":0.9
+  },
+  {
+    "PlayerName":"Brandon Williams",
+    "Team":"ARI",
+    "rec_att":1.5,
+    "rec_yds":"9",
+    "rec_tds":0,
+    "fumbles":0,
+    "fpts":0.9
+  }
+]

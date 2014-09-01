@@ -1,34 +1,274 @@
-[{"PlayerName":"Stephen Gostkowski","Team":"NE","fg":32.6 ,"fga":36.5 ,"xpt":50.3 ,"fpts":148.1 },
-{"PlayerName":"Phil Dawson","Team":"SF","fg":31.1 ,"fga":34.5 ,"xpt":44.9 ,"fpts":138.3 },
-{"PlayerName":"Justin Tucker","Team":"BAL","fg":33.5 ,"fga":37.3 ,"xpt":33.8 ,"fpts":134.3 },
-{"PlayerName":"Matt Prater","Team":"DEN","fg":24.8 ,"fga":28.1 ,"xpt":59.9 ,"fpts":134.1 },
-{"PlayerName":"Mason Crosby","Team":"GB","fg":27.8 ,"fga":32.8 ,"xpt":50.8 ,"fpts":134.0 },
-{"PlayerName":"Steven Hauschka","Team":"SEA","fg":29.9 ,"fga":33.5 ,"xpt":44.3 ,"fpts":133.9 },
-{"PlayerName":"Adam Vinatieri","Team":"IND","fg":31.1 ,"fga":34.6 ,"xpt":39.4 ,"fpts":132.8 },
-{"PlayerName":"Dan Bailey","Team":"DAL","fg":29.0 ,"fga":31.8 ,"xpt":43.4 ,"fpts":130.4 },
-{"PlayerName":"Shayne Graham","Team":"NO","fg":26.1 ,"fga":30.5 ,"xpt":52.0 ,"fpts":130.4 },
-{"PlayerName":"Nick Novak","Team":"SD","fg":29.5 ,"fga":33.8 ,"xpt":40.5 ,"fpts":129.0 },
-{"PlayerName":"Matt Bryant","Team":"ATL","fg":29.0 ,"fga":33.1 ,"xpt":41.1 ,"fpts":128.1 },
-{"PlayerName":"Robbie Gould","Team":"CHI","fg":26.6 ,"fga":30.6 ,"xpt":43.3 ,"fpts":123.1 },
-{"PlayerName":"Alex Henery","Team":"PHI","fg":24.8 ,"fga":30.1 ,"xpt":46.0 ,"fpts":120.3 },
-{"PlayerName":"Blair Walsh","Team":"MIN","fg":27.1 ,"fga":32.4 ,"xpt":36.8 ,"fpts":118.1 },
-{"PlayerName":"Shaun Suisham","Team":"PIT","fg":26.0 ,"fga":29.8 ,"xpt":40.1 ,"fpts":118.1 },
-{"PlayerName":"Dan Carpenter","Team":"BUF","fg":26.8 ,"fga":31.1 ,"xpt":35.5 ,"fpts":115.8 },
-{"PlayerName":"Greg Zuerlein","Team":"STL","fg":25.4 ,"fga":30.9 ,"xpt":38.3 ,"fpts":114.4 },
-{"PlayerName":"Jay Feely","Team":"ARI","fg":26.6 ,"fga":32.5 ,"xpt":34.5 ,"fpts":114.4 },
-{"PlayerName":"Ryan Succop","Team":"KC","fg":24.4 ,"fga":29.8 ,"xpt":41.0 ,"fpts":114.1 },
-{"PlayerName":"Caleb Sturgis","Team":"MIA","fg":26.4 ,"fga":32.0 ,"xpt":34.1 ,"fpts":113.3 },
-{"PlayerName":"Sebastian Janikowski","Team":"OAK","fg":25.1 ,"fga":30.1 ,"xpt":36.5 ,"fpts":111.9 },
-{"PlayerName":"Graham Gano","Team":"CAR","fg":24.9 ,"fga":28.9 ,"xpt":36.8 ,"fpts":111.4 },
-{"PlayerName":"Nick Folk","Team":"NYJ","fg":25.8 ,"fga":31.9 ,"xpt":33.9 ,"fpts":111.1 },
-{"PlayerName":"Mike Nugent","Team":"CIN","fg":22.5 ,"fga":26.4 ,"xpt":42.0 ,"fpts":109.5 },
-{"PlayerName":"Josh Brown","Team":"NYG","fg":25.0 ,"fga":29.8 ,"xpt":34.4 ,"fpts":109.4 },
-{"PlayerName":"Connor Barth","Team":"TB","fg":24.3 ,"fga":30.0 ,"xpt":32.8 ,"fpts":105.5 },
-{"PlayerName":"Randy Bullock","Team":"HOU","fg":23.5 ,"fga":30.4 ,"xpt":33.6 ,"fpts":104.1 },
-{"PlayerName":"Josh Scobee","Team":"JAC","fg":23.6 ,"fga":27.3 ,"xpt":31.0 ,"fpts":101.9 },
-{"PlayerName":"Billy Cundiff","Team":"CLE","fg":21.9 ,"fga":26.9 ,"xpt":34.5 ,"fpts":100.1 },
-{"PlayerName":"Kai Forbath","Team":"WAS","fg":22.1 ,"fga":27.1 ,"xpt":32.8 ,"fpts":99.1 },
-{"PlayerName":"Maikon Bonani","Team":"TEN","fg":21.6 ,"fga":27.4 ,"xpt":31.0 ,"fpts":95.9 },
-{"PlayerName":"Nate Freese","Team":"DET","fg":19.2 ,"fga":22.8 ,"xpt":38.0 ,"fpts":95.5 },
-{"PlayerName":"Giorgio Tavecchio","Team":"DET","fg":16.5 ,"fga":21.0 ,"xpt":21.8 ,"fpts":71.3 },
-{"PlayerName":"Dustin Hopkins","Team":"BUF","fg":2.3 ,"fga":3.8 ,"xpt":0.0 ,"fpts":6.8 }]
+[
+  {
+    "PlayerName":"Stephen Gostkowski",
+    "Team":"NE",
+    "fg":32.6,
+    "fga":36.5,
+    "xpt":50.3,
+    "fpts":148.1
+  },
+  {
+    "PlayerName":"Phil Dawson",
+    "Team":"SF",
+    "fg":31.1,
+    "fga":34.5,
+    "xpt":44.9,
+    "fpts":138.3
+  },
+  {
+    "PlayerName":"Justin Tucker",
+    "Team":"BAL",
+    "fg":33.5,
+    "fga":37.3,
+    "xpt":33.8,
+    "fpts":134.3
+  },
+  {
+    "PlayerName":"Mason Crosby",
+    "Team":"GB",
+    "fg":27.8,
+    "fga":32.8,
+    "xpt":50.8,
+    "fpts":134
+  },
+  {
+    "PlayerName":"Steven Hauschka",
+    "Team":"SEA",
+    "fg":29.9,
+    "fga":33.5,
+    "xpt":44.3,
+    "fpts":133.9
+  },
+  {
+    "PlayerName":"Adam Vinatieri",
+    "Team":"IND",
+    "fg":31.1,
+    "fga":34.6,
+    "xpt":39.4,
+    "fpts":132.8
+  },
+  {
+    "PlayerName":"Dan Bailey",
+    "Team":"DAL",
+    "fg":29,
+    "fga":31.8,
+    "xpt":43.4,
+    "fpts":130.4
+  },
+  {
+    "PlayerName":"Shayne Graham",
+    "Team":"NO",
+    "fg":26.1,
+    "fga":30.5,
+    "xpt":52,
+    "fpts":130.4
+  },
+  {
+    "PlayerName":"Nick Novak",
+    "Team":"SD",
+    "fg":29.5,
+    "fga":33.8,
+    "xpt":40.5,
+    "fpts":129
+  },
+  {
+    "PlayerName":"Matt Bryant",
+    "Team":"ATL",
+    "fg":29,
+    "fga":33.1,
+    "xpt":41.1,
+    "fpts":128.1
+  },
+  {
+    "PlayerName":"Robbie Gould",
+    "Team":"CHI",
+    "fg":26.6,
+    "fga":30.6,
+    "xpt":43.3,
+    "fpts":123.1
+  },
+  {
+    "PlayerName":"Alex Henery",
+    "Team":"PHI",
+    "fg":24.8,
+    "fga":30.1,
+    "xpt":46,
+    "fpts":120.3
+  },
+  {
+    "PlayerName":"Blair Walsh",
+    "Team":"MIN",
+    "fg":27.1,
+    "fga":32.4,
+    "xpt":36.8,
+    "fpts":118.1
+  },
+  {
+    "PlayerName":"Shaun Suisham",
+    "Team":"PIT",
+    "fg":26,
+    "fga":29.8,
+    "xpt":40.1,
+    "fpts":118.1
+  },
+  {
+    "PlayerName":"Dan Carpenter",
+    "Team":"BUF",
+    "fg":26.8,
+    "fga":31.1,
+    "xpt":35.5,
+    "fpts":115.8
+  },
+  {
+    "PlayerName":"Nate Freese",
+    "Team":"DET",
+    "fg":24.5,
+    "fga":28.8,
+    "xpt":42,
+    "fpts":115.5
+  },
+  {
+    "PlayerName":"Ryan Succop",
+    "Team":"KC",
+    "fg":24.4,
+    "fga":29.8,
+    "xpt":41,
+    "fpts":114.1
+  },
+  {
+    "PlayerName":"Caleb Sturgis",
+    "Team":"MIA",
+    "fg":26.4,
+    "fga":32,
+    "xpt":33.4,
+    "fpts":112.5
+  },
+  {
+    "PlayerName":"Greg Zuerlein",
+    "Team":"STL",
+    "fg":25,
+    "fga":30.5,
+    "xpt":37.5,
+    "fpts":112.5
+  },
+  {
+    "PlayerName":"Sebastian Janikowski",
+    "Team":"OAK",
+    "fg":25.1,
+    "fga":30.1,
+    "xpt":36.5,
+    "fpts":111.9
+  },
+  {
+    "PlayerName":"Graham Gano",
+    "Team":"CAR",
+    "fg":24.9,
+    "fga":28.9,
+    "xpt":36.8,
+    "fpts":111.4
+  },
+  {
+    "PlayerName":"Nick Folk",
+    "Team":"NYJ",
+    "fg":25.8,
+    "fga":31.9,
+    "xpt":33.9,
+    "fpts":111.1
+  },
+  {
+    "PlayerName":"Chandler Catanzaro",
+    "Team":"ARI",
+    "fg":25.9,
+    "fga":30.6,
+    "xpt":31.9,
+    "fpts":109.5
+  },
+  {
+    "PlayerName":"Mike Nugent",
+    "Team":"CIN",
+    "fg":22.5,
+    "fga":26.4,
+    "xpt":42,
+    "fpts":109.5
+  },
+  {
+    "PlayerName":"Josh Brown",
+    "Team":"NYG",
+    "fg":25,
+    "fga":29.8,
+    "xpt":34.4,
+    "fpts":109.4
+  },
+  {
+    "PlayerName":"Connor Barth",
+    "Team":"TB",
+    "fg":24.3,
+    "fga":30,
+    "xpt":32.8,
+    "fpts":105.5
+  },
+  {
+    "PlayerName":"Randy Bullock",
+    "Team":"HOU",
+    "fg":23.5,
+    "fga":30.4,
+    "xpt":33.6,
+    "fpts":104.1
+  },
+  {
+    "PlayerName":"Josh Scobee",
+    "Team":"JAC",
+    "fg":23.6,
+    "fga":27.3,
+    "xpt":31,
+    "fpts":101.9
+  },
+  {
+    "PlayerName":"Matt Prater",
+    "Team":"DEN",
+    "fg":18.6,
+    "fga":21.4,
+    "xpt":45.8,
+    "fpts":101.6
+  },
+  {
+    "PlayerName":"Billy Cundiff",
+    "Team":"CLE",
+    "fg":21.9,
+    "fga":26.9,
+    "xpt":34.5,
+    "fpts":100.1
+  },
+  {
+    "PlayerName":"Kai Forbath",
+    "Team":"WAS",
+    "fg":22.1,
+    "fga":27.1,
+    "xpt":32.8,
+    "fpts":99.1
+  },
+  {
+    "PlayerName":"Maikon Bonani",
+    "Team":"TEN",
+    "fg":21.6,
+    "fga":27.4,
+    "xpt":31,
+    "fpts":95.9
+  },
+  {
+    "PlayerName":"Brandon McManus",
+    "Team":"DEN",
+    "fg":6,
+    "fga":7,
+    "xpt":5.5,
+    "fpts":23.5
+  },
+  {
+    "PlayerName":"Dustin Hopkins",
+    "Team":"BUF",
+    "fg":2.3,
+    "fga":3.8,
+    "xpt":0,
+    "fpts":6.8
+  }
+]

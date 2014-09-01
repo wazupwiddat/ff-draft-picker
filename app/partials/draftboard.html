@@ -122,4 +122,9 @@
       </div>
     </div>
   </div>
+      <div class="row-fluid">
+		  <div class="span4" ng-repeat="fteam in fteams | orderBy:fteamOrderProp">
+			<strong>{{fteam.FantasyTeam}} - </strong><span ng-repeat="player in fteam.players | filter:query | filter:player | orderBy:playerOrderProp">{{player.pos}}
+		  </div>
+      </div>
 </div>
